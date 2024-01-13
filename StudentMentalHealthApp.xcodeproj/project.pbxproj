@@ -8,12 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		AD8261BE2B52ABFD0013356E /* StudentMentalHealthAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */; };
-		AD8261C02B52ABFD0013356E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261BF2B52ABFD0013356E /* ContentView.swift */; };
+		AD8261C02B52ABFD0013356E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261BF2B52ABFD0013356E /* MainView.swift */; };
 		AD8261C22B52ABFE0013356E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8261C12B52ABFE0013356E /* Assets.xcassets */; };
 		AD8261C52B52ABFE0013356E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8261C42B52ABFE0013356E /* Preview Assets.xcassets */; };
 		AD8261CF2B52ABFE0013356E /* StudentMentalHealthAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261CE2B52ABFE0013356E /* StudentMentalHealthAppTests.swift */; };
 		AD8261D92B52ABFE0013356E /* StudentMentalHealthAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261D82B52ABFE0013356E /* StudentMentalHealthAppUITests.swift */; };
 		AD8261DB2B52ABFE0013356E /* StudentMentalHealthAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261DA2B52ABFE0013356E /* StudentMentalHealthAppUITestsLaunchTests.swift */; };
+		AD8261E92B52B0340013356E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AD8261E82B52B0340013356E /* FirebaseAuth */; };
+		AD8261EB2B52B0340013356E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AD8261EA2B52B0340013356E /* FirebaseFirestore */; };
+		AD8261ED2B52B0340013356E /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD8261EC2B52B0340013356E /* FirebaseFirestoreSwift */; };
+		AD8261EF2B52B1EC0013356E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD8261EE2B52B1EC0013356E /* GoogleService-Info.plist */; };
+		AD8261F82B52B63D0013356E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261F72B52B63D0013356E /* ProfileView.swift */; };
+		AD8261FB2B52B6710013356E /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261FA2B52B6710013356E /* ToDoListView.swift */; };
+		AD8261FD2B52B6920013356E /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261FC2B52B6920013356E /* NewItemView.swift */; };
+		AD8261FF2B52B6AB0013356E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261FE2B52B6AB0013356E /* LoginView.swift */; };
+		AD8262012B52B6C20013356E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8262002B52B6C20013356E /* RegisterView.swift */; };
+		AD8262032B52B7090013356E /* ToDoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8262022B52B7090013356E /* ToDoListItemView.swift */; };
+		AD8262082B52B7610013356E /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8262072B52B7610013356E /* HomePageView.swift */; };
+		AD82620A2B52B79B0013356E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8262092B52B79B0013356E /* User.swift */; };
+		AD82620D2B52B7C30013356E /* ToDoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82620C2B52B7C30013356E /* ToDoListItem.swift */; };
+		AD82620F2B52B7FD0013356E /* ToDoListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82620E2B52B7FD0013356E /* ToDoListViewViewModel.swift */; };
+		AD8262112B52B8070013356E /* NewItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8262102B52B8070013356E /* NewItemViewViewModel.swift */; };
+		AD8262132B52B8150013356E /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8262122B52B8150013356E /* ToDoListItemViewViewModel.swift */; };
+		AD8262152B52B82B0013356E /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8262142B52B82B0013356E /* MainViewViewModel.swift */; };
+		AD8262172B52B8340013356E /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8262162B52B8340013356E /* ProfileViewViewModel.swift */; };
+		AD8262192B52B83E0013356E /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8262182B52B83E0013356E /* LoginViewViewModel.swift */; };
+		AD82621B2B52B84A0013356E /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82621A2B52B84A0013356E /* RegisterViewViewModel.swift */; };
+		AD82621D2B52BC230013356E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82621C2B52BC230013356E /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +57,7 @@
 /* Begin PBXFileReference section */
 		AD8261BA2B52ABFD0013356E /* StudentMentalHealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentMentalHealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMentalHealthAppApp.swift; sourceTree = "<group>"; };
-		AD8261BF2B52ABFD0013356E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD8261BF2B52ABFD0013356E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AD8261C12B52ABFE0013356E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD8261C42B52ABFE0013356E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD8261CA2B52ABFE0013356E /* StudentMentalHealthAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentMentalHealthAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +65,24 @@
 		AD8261D42B52ABFE0013356E /* StudentMentalHealthAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentMentalHealthAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8261D82B52ABFE0013356E /* StudentMentalHealthAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMentalHealthAppUITests.swift; sourceTree = "<group>"; };
 		AD8261DA2B52ABFE0013356E /* StudentMentalHealthAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMentalHealthAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AD8261EE2B52B1EC0013356E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AD8261F72B52B63D0013356E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AD8261FA2B52B6710013356E /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
+		AD8261FC2B52B6920013356E /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
+		AD8261FE2B52B6AB0013356E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AD8262002B52B6C20013356E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		AD8262022B52B7090013356E /* ToDoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemView.swift; sourceTree = "<group>"; };
+		AD8262072B52B7610013356E /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		AD8262092B52B79B0013356E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AD82620C2B52B7C30013356E /* ToDoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItem.swift; sourceTree = "<group>"; };
+		AD82620E2B52B7FD0013356E /* ToDoListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewViewModel.swift; sourceTree = "<group>"; };
+		AD8262102B52B8070013356E /* NewItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewViewModel.swift; sourceTree = "<group>"; };
+		AD8262122B52B8150013356E /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
+		AD8262142B52B82B0013356E /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		AD8262162B52B8340013356E /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
+		AD8262182B52B83E0013356E /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		AD82621A2B52B84A0013356E /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
+		AD82621C2B52BC230013356E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD8261E92B52B0340013356E /* FirebaseAuth in Frameworks */,
+				AD8261EB2B52B0340013356E /* FirebaseFirestore in Frameworks */,
+				AD8261ED2B52B0340013356E /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,9 +136,10 @@
 		AD8261BC2B52ABFD0013356E /* StudentMentalHealthApp */ = {
 			isa = PBXGroup;
 			children = (
-				AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */,
-				AD8261BF2B52ABFD0013356E /* ContentView.swift */,
-				AD8261C12B52ABFE0013356E /* Assets.xcassets */,
+				AD8261F62B52B5890013356E /* Homepage */,
+				AD8261F52B52B4E20013356E /* Todolist */,
+				AD8261F42B52B4AF0013356E /* Login&signup */,
+				AD8261F32B52B43E0013356E /* Other */,
 				AD8261C32B52ABFE0013356E /* Preview Content */,
 			);
 			path = StudentMentalHealthApp;
@@ -127,6 +170,111 @@
 			path = StudentMentalHealthAppUITests;
 			sourceTree = "<group>";
 		};
+		AD8261F02B52B4000013356E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD8261BF2B52ABFD0013356E /* MainView.swift */,
+				AD8261F72B52B63D0013356E /* ProfileView.swift */,
+				AD8261FE2B52B6AB0013356E /* LoginView.swift */,
+				AD8262002B52B6C20013356E /* RegisterView.swift */,
+				AD82621C2B52BC230013356E /* HeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD8261F12B52B4070013356E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AD8262142B52B82B0013356E /* MainViewViewModel.swift */,
+				AD8262162B52B8340013356E /* ProfileViewViewModel.swift */,
+				AD8262182B52B83E0013356E /* LoginViewViewModel.swift */,
+				AD82621A2B52B84A0013356E /* RegisterViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AD8261F22B52B41B0013356E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD8262092B52B79B0013356E /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD8261F32B52B43E0013356E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				AD8261C12B52ABFE0013356E /* Assets.xcassets */,
+				AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */,
+				AD8261EE2B52B1EC0013356E /* GoogleService-Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		AD8261F42B52B4AF0013356E /* Login&signup */ = {
+			isa = PBXGroup;
+			children = (
+				AD8261F22B52B41B0013356E /* Models */,
+				AD8261F12B52B4070013356E /* ViewModels */,
+				AD8261F02B52B4000013356E /* Views */,
+			);
+			path = "Login&signup";
+			sourceTree = "<group>";
+		};
+		AD8261F52B52B4E20013356E /* Todolist */ = {
+			isa = PBXGroup;
+			children = (
+				AD82620B2B52B7B20013356E /* Models */,
+				AD8262052B52B7480013356E /* ViewModels */,
+				AD8261F92B52B6530013356E /* Views */,
+			);
+			path = Todolist;
+			sourceTree = "<group>";
+		};
+		AD8261F62B52B5890013356E /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				AD8262062B52B7530013356E /* Views */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+		AD8261F92B52B6530013356E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD8261FA2B52B6710013356E /* ToDoListView.swift */,
+				AD8261FC2B52B6920013356E /* NewItemView.swift */,
+				AD8262022B52B7090013356E /* ToDoListItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD8262052B52B7480013356E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AD82620E2B52B7FD0013356E /* ToDoListViewViewModel.swift */,
+				AD8262102B52B8070013356E /* NewItemViewViewModel.swift */,
+				AD8262122B52B8150013356E /* ToDoListItemViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AD8262062B52B7530013356E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD8262072B52B7610013356E /* HomePageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD82620B2B52B7B20013356E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD82620C2B52B7C30013356E /* ToDoListItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +291,11 @@
 			dependencies = (
 			);
 			name = StudentMentalHealthApp;
+			packageProductDependencies = (
+				AD8261E82B52B0340013356E /* FirebaseAuth */,
+				AD8261EA2B52B0340013356E /* FirebaseFirestore */,
+				AD8261EC2B52B0340013356E /* FirebaseFirestoreSwift */,
+			);
 			productName = StudentMentalHealthApp;
 			productReference = AD8261BA2B52ABFD0013356E /* StudentMentalHealthApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +368,9 @@
 				Base,
 			);
 			mainGroup = AD8261B12B52ABFC0013356E;
+			packageReferences = (
+				AD8261E72B52B0340013356E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = AD8261BB2B52ABFD0013356E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +389,7 @@
 			files = (
 				AD8261C52B52ABFE0013356E /* Preview Assets.xcassets in Resources */,
 				AD8261C22B52ABFE0013356E /* Assets.xcassets in Resources */,
+				AD8261EF2B52B1EC0013356E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +414,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD8261C02B52ABFD0013356E /* ContentView.swift in Sources */,
+				AD8262132B52B8150013356E /* ToDoListItemViewViewModel.swift in Sources */,
+				AD82620D2B52B7C30013356E /* ToDoListItem.swift in Sources */,
+				AD8261FF2B52B6AB0013356E /* LoginView.swift in Sources */,
+				AD8261C02B52ABFD0013356E /* MainView.swift in Sources */,
+				AD8262112B52B8070013356E /* NewItemViewViewModel.swift in Sources */,
+				AD8261FB2B52B6710013356E /* ToDoListView.swift in Sources */,
+				AD82621D2B52BC230013356E /* HeaderView.swift in Sources */,
+				AD8262192B52B83E0013356E /* LoginViewViewModel.swift in Sources */,
+				AD8262012B52B6C20013356E /* RegisterView.swift in Sources */,
+				AD82621B2B52B84A0013356E /* RegisterViewViewModel.swift in Sources */,
+				AD8261F82B52B63D0013356E /* ProfileView.swift in Sources */,
+				AD8262152B52B82B0013356E /* MainViewViewModel.swift in Sources */,
+				AD8262032B52B7090013356E /* ToDoListItemView.swift in Sources */,
+				AD82620F2B52B7FD0013356E /* ToDoListViewViewModel.swift in Sources */,
 				AD8261BE2B52ABFD0013356E /* StudentMentalHealthAppApp.swift in Sources */,
+				AD8262082B52B7610013356E /* HomePageView.swift in Sources */,
+				AD8262172B52B8340013356E /* ProfileViewViewModel.swift in Sources */,
+				AD82620A2B52B79B0013356E /* User.swift in Sources */,
+				AD8261FD2B52B6920013356E /* NewItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,8 +596,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,8 +623,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,6 +749,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD8261E72B52B0340013356E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD8261E82B52B0340013356E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD8261E72B52B0340013356E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AD8261EA2B52B0340013356E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD8261E72B52B0340013356E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		AD8261EC2B52B0340013356E /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD8261E72B52B0340013356E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD8261B22B52ABFC0013356E /* Project object */;
 }
