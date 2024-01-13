@@ -23,9 +23,10 @@ struct LoginView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 SecureField("Password", text: $password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                
             }
             //Create account
-            
+            Text("Hello")
             Spacer()
         }
     }
