@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD8261BE2B52ABFD0013356E /* StudentMentalHealthAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */; };
+		AD8261C02B52ABFD0013356E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261BF2B52ABFD0013356E /* ContentView.swift */; };
+		AD8261C22B52ABFE0013356E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8261C12B52ABFE0013356E /* Assets.xcassets */; };
+		AD8261C52B52ABFE0013356E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8261C42B52ABFE0013356E /* Preview Assets.xcassets */; };
+		AD8261CF2B52ABFE0013356E /* StudentMentalHealthAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261CE2B52ABFE0013356E /* StudentMentalHealthAppTests.swift */; };
+		AD8261D92B52ABFE0013356E /* StudentMentalHealthAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261D82B52ABFE0013356E /* StudentMentalHealthAppUITests.swift */; };
+		AD8261DB2B52ABFE0013356E /* StudentMentalHealthAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261DA2B52ABFE0013356E /* StudentMentalHealthAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD8261CB2B52ABFE0013356E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD8261B22B52ABFC0013356E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD8261B92B52ABFD0013356E;
+			remoteInfo = StudentMentalHealthApp;
+		};
+		AD8261D52B52ABFE0013356E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD8261B22B52ABFC0013356E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD8261B92B52ABFD0013356E;
+			remoteInfo = StudentMentalHealthApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD8261BA2B52ABFD0013356E /* StudentMentalHealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentMentalHealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMentalHealthAppApp.swift; sourceTree = "<group>"; };
+		AD8261BF2B52ABFD0013356E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD8261C12B52ABFE0013356E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD8261C42B52ABFE0013356E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD8261CA2B52ABFE0013356E /* StudentMentalHealthAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentMentalHealthAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8261CE2B52ABFE0013356E /* StudentMentalHealthAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMentalHealthAppTests.swift; sourceTree = "<group>"; };
+		AD8261D42B52ABFE0013356E /* StudentMentalHealthAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentMentalHealthAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8261D82B52ABFE0013356E /* StudentMentalHealthAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMentalHealthAppUITests.swift; sourceTree = "<group>"; };
+		AD8261DA2B52ABFE0013356E /* StudentMentalHealthAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMentalHealthAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD8261B72B52ABFD0013356E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8261C72B52ABFE0013356E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8261D12B52ABFE0013356E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD8261B12B52ABFC0013356E = {
+			isa = PBXGroup;
+			children = (
+				AD8261BC2B52ABFD0013356E /* StudentMentalHealthApp */,
+				AD8261CD2B52ABFE0013356E /* StudentMentalHealthAppTests */,
+				AD8261D72B52ABFE0013356E /* StudentMentalHealthAppUITests */,
+				AD8261BB2B52ABFD0013356E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD8261BB2B52ABFD0013356E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD8261BA2B52ABFD0013356E /* StudentMentalHealthApp.app */,
+				AD8261CA2B52ABFE0013356E /* StudentMentalHealthAppTests.xctest */,
+				AD8261D42B52ABFE0013356E /* StudentMentalHealthAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD8261BC2B52ABFD0013356E /* StudentMentalHealthApp */ = {
+			isa = PBXGroup;
+			children = (
+				AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */,
+				AD8261BF2B52ABFD0013356E /* ContentView.swift */,
+				AD8261C12B52ABFE0013356E /* Assets.xcassets */,
+				AD8261C32B52ABFE0013356E /* Preview Content */,
+			);
+			path = StudentMentalHealthApp;
+			sourceTree = "<group>";
+		};
+		AD8261C32B52ABFE0013356E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AD8261C42B52ABFE0013356E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD8261CD2B52ABFE0013356E /* StudentMentalHealthAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD8261CE2B52ABFE0013356E /* StudentMentalHealthAppTests.swift */,
+			);
+			path = StudentMentalHealthAppTests;
+			sourceTree = "<group>";
+		};
+		AD8261D72B52ABFE0013356E /* StudentMentalHealthAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD8261D82B52ABFE0013356E /* StudentMentalHealthAppUITests.swift */,
+				AD8261DA2B52ABFE0013356E /* StudentMentalHealthAppUITestsLaunchTests.swift */,
+			);
+			path = StudentMentalHealthAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD8261B92B52ABFD0013356E /* StudentMentalHealthApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD8261DE2B52ABFE0013356E /* Build configuration list for PBXNativeTarget "StudentMentalHealthApp" */;
+			buildPhases = (
+				AD8261B62B52ABFD0013356E /* Sources */,
+				AD8261B72B52ABFD0013356E /* Frameworks */,
+				AD8261B82B52ABFD0013356E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudentMentalHealthApp;
+			productName = StudentMentalHealthApp;
+			productReference = AD8261BA2B52ABFD0013356E /* StudentMentalHealthApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD8261C92B52ABFE0013356E /* StudentMentalHealthAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD8261E12B52ABFE0013356E /* Build configuration list for PBXNativeTarget "StudentMentalHealthAppTests" */;
+			buildPhases = (
+				AD8261C62B52ABFE0013356E /* Sources */,
+				AD8261C72B52ABFE0013356E /* Frameworks */,
+				AD8261C82B52ABFE0013356E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD8261CC2B52ABFE0013356E /* PBXTargetDependency */,
+			);
+			name = StudentMentalHealthAppTests;
+			productName = StudentMentalHealthAppTests;
+			productReference = AD8261CA2B52ABFE0013356E /* StudentMentalHealthAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD8261D32B52ABFE0013356E /* StudentMentalHealthAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD8261E42B52ABFE0013356E /* Build configuration list for PBXNativeTarget "StudentMentalHealthAppUITests" */;
+			buildPhases = (
+				AD8261D02B52ABFE0013356E /* Sources */,
+				AD8261D12B52ABFE0013356E /* Frameworks */,
+				AD8261D22B52ABFE0013356E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD8261D62B52ABFE0013356E /* PBXTargetDependency */,
+			);
+			name = StudentMentalHealthAppUITests;
+			productName = StudentMentalHealthAppUITests;
+			productReference = AD8261D42B52ABFE0013356E /* StudentMentalHealthAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD8261B22B52ABFC0013356E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					AD8261B92B52ABFD0013356E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					AD8261C92B52ABFE0013356E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = AD8261B92B52ABFD0013356E;
+					};
+					AD8261D32B52ABFE0013356E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = AD8261B92B52ABFD0013356E;
+					};
+				};
+			};
+			buildConfigurationList = AD8261B52B52ABFC0013356E /* Build configuration list for PBXProject "StudentMentalHealthApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD8261B12B52ABFC0013356E;
+			productRefGroup = AD8261BB2B52ABFD0013356E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD8261B92B52ABFD0013356E /* StudentMentalHealthApp */,
+				AD8261C92B52ABFE0013356E /* StudentMentalHealthAppTests */,
+				AD8261D32B52ABFE0013356E /* StudentMentalHealthAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD8261B82B52ABFD0013356E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8261C52B52ABFE0013356E /* Preview Assets.xcassets in Resources */,
+				AD8261C22B52ABFE0013356E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8261C82B52ABFE0013356E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8261D22B52ABFE0013356E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD8261B62B52ABFD0013356E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8261C02B52ABFD0013356E /* ContentView.swift in Sources */,
+				AD8261BE2B52ABFD0013356E /* StudentMentalHealthAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8261C62B52ABFE0013356E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8261CF2B52ABFE0013356E /* StudentMentalHealthAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8261D02B52ABFE0013356E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8261D92B52ABFE0013356E /* StudentMentalHealthAppUITests.swift in Sources */,
+				AD8261DB2B52ABFE0013356E /* StudentMentalHealthAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD8261CC2B52ABFE0013356E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD8261B92B52ABFD0013356E /* StudentMentalHealthApp */;
+			targetProxy = AD8261CB2B52ABFE0013356E /* PBXContainerItemProxy */;
+		};
+		AD8261D62B52ABFE0013356E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD8261B92B52ABFD0013356E /* StudentMentalHealthApp */;
+			targetProxy = AD8261D52B52ABFE0013356E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AD8261DC2B52ABFE0013356E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD8261DD2B52ABFE0013356E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD8261DF2B52ABFE0013356E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StudentMentalHealthApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.StudentMentalHealthApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD8261E02B52ABFE0013356E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StudentMentalHealthApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.StudentMentalHealthApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD8261E22B52ABFE0013356E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.StudentMentalHealthAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudentMentalHealthApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StudentMentalHealthApp";
+			};
+			name = Debug;
+		};
+		AD8261E32B52ABFE0013356E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.StudentMentalHealthAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudentMentalHealthApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StudentMentalHealthApp";
+			};
+			name = Release;
+		};
+		AD8261E52B52ABFE0013356E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.StudentMentalHealthAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StudentMentalHealthApp;
+			};
+			name = Debug;
+		};
+		AD8261E62B52ABFE0013356E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.StudentMentalHealthAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StudentMentalHealthApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD8261B52B52ABFC0013356E /* Build configuration list for PBXProject "StudentMentalHealthApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8261DC2B52ABFE0013356E /* Debug */,
+				AD8261DD2B52ABFE0013356E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD8261DE2B52ABFE0013356E /* Build configuration list for PBXNativeTarget "StudentMentalHealthApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8261DF2B52ABFE0013356E /* Debug */,
+				AD8261E02B52ABFE0013356E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD8261E12B52ABFE0013356E /* Build configuration list for PBXNativeTarget "StudentMentalHealthAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8261E22B52ABFE0013356E /* Debug */,
+				AD8261E32B52ABFE0013356E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD8261E42B52ABFE0013356E /* Build configuration list for PBXNativeTarget "StudentMentalHealthAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8261E52B52ABFE0013356E /* Debug */,
+				AD8261E62B52ABFE0013356E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD8261B22B52ABFC0013356E /* Project object */;
+}
