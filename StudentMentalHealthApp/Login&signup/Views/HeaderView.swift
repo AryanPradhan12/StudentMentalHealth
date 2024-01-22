@@ -9,25 +9,26 @@ import SwiftUI
 
 struct HeaderView: View {
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 0)
-                .foregroundColor(Color.red)
-                .rotationEffect(Angle(degrees: 15))
-                
-            
-            VStack {
-                Text("Student Mental Health")
-                    .font(.system(size:35))
-                    .foregroundColor(Color.white)
-                    .bold()
-                
-                Text("Improve your mental health")
-                    .foregroundColor(Color.white)
-                    .font(.system(size:20))
+        
+        VStack {
+            ZStack {
+                RoundedRectangle(cornerRadius: 0)
+                    .foregroundColor(.red)
+                    .rotationEffect(Angle(degrees: 15),anchor: .center)
+                VStack {
+                    Text("Student Mental Health")
+                        .font(.system(size:35))
+                        .foregroundColor(Color.white)
+                        .bold()
+                    
+                    Text("Improve Your Mental Health")
+                        .foregroundColor(Color.white)
+                        .font(.system(size:20))
+                }
             }
+            .frame(width: UIScreen.main.bounds.width * 3, height: 300)
+            .offset(y: -100)
         }
-        .frame(width: UIScreen.main.bounds.width * 3, height: 300)
-        .offset(y: -100)
     }
 }
 
