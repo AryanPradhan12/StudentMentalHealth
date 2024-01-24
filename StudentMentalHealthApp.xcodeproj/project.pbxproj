@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD6694712B61377D0008339A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6694702B61377D0008339A /* ButtonView.swift */; };
+		AD6694732B6146D70008339A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6694722B6146D70008339A /* Extensions.swift */; };
 		AD8261BE2B52ABFD0013356E /* StudentMentalHealthAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */; };
 		AD8261C02B52ABFD0013356E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261BF2B52ABFD0013356E /* MainView.swift */; };
 		AD8261C22B52ABFE0013356E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8261C12B52ABFE0013356E /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD6694702B61377D0008339A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		AD6694722B6146D70008339A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AD8261BA2B52ABFD0013356E /* StudentMentalHealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentMentalHealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMentalHealthAppApp.swift; sourceTree = "<group>"; };
 		AD8261BF2B52ABFD0013356E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 				AD8261FE2B52B6AB0013356E /* LoginView.swift */,
 				AD8262002B52B6C20013356E /* RegisterView.swift */,
 				AD82621C2B52BC230013356E /* HeaderView.swift */,
+				AD6694702B61377D0008339A /* ButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 				AD8261C12B52ABFE0013356E /* Assets.xcassets */,
 				AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */,
 				AD8261EE2B52B1EC0013356E /* GoogleService-Info.plist */,
+				AD6694722B6146D70008339A /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -416,6 +422,7 @@
 			files = (
 				AD8262132B52B8150013356E /* ToDoListItemViewViewModel.swift in Sources */,
 				AD82620D2B52B7C30013356E /* ToDoListItem.swift in Sources */,
+				AD6694712B61377D0008339A /* ButtonView.swift in Sources */,
 				AD8261FF2B52B6AB0013356E /* LoginView.swift in Sources */,
 				AD8261C02B52ABFD0013356E /* MainView.swift in Sources */,
 				AD8262112B52B8070013356E /* NewItemViewViewModel.swift in Sources */,
@@ -426,6 +433,7 @@
 				AD82621B2B52B84A0013356E /* RegisterViewViewModel.swift in Sources */,
 				AD8261F82B52B63D0013356E /* ProfileView.swift in Sources */,
 				AD8262152B52B82B0013356E /* MainViewViewModel.swift in Sources */,
+				AD6694732B6146D70008339A /* Extensions.swift in Sources */,
 				AD8262032B52B7090013356E /* ToDoListItemView.swift in Sources */,
 				AD82620F2B52B7FD0013356E /* ToDoListViewViewModel.swift in Sources */,
 				AD8261BE2B52ABFD0013356E /* StudentMentalHealthAppApp.swift in Sources */,

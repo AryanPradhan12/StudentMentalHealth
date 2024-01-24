@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RegisterView: View {
+    @StateObject var viewModel = RegisterViewViewModel()
     var body: some View {
         VStack {
             ZStack {
@@ -29,8 +30,28 @@ struct RegisterView: View {
             .frame(width: UIScreen.main.bounds.width * 3, height: 300)
             .offset(y: -100)
             .padding(.bottom, 50)
+            //End of header
+            Form {
+                TextField("Full Name", text: $viewModel.name)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled()
+                
+                TextField("Email Address", text: $viewModel.email)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                    .autocapitalization(.none)
+                    .autocorrectionDisabled()
+                
+                SecureField("Password", text: $viewModel.password)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                
+                ButtonView(title: "Create Account", background: .green) {
+                    viewModel.register()
+                }
+                .padding()
+            }
+            .offset(y: -50)
             Spacer()
-        } //End of header
+        }
         
     }
 }
