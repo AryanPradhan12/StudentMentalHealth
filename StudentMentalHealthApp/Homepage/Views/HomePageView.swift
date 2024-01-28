@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomePageView: View {
+@StateObject var viewModel = HomePageViewViewModel()
     var body: some View {
         NavigationStack {
             ZStack {
@@ -21,7 +22,7 @@ struct HomePageView: View {
                 
                     List {
                         Section("Features") {
-                            NavigationLink(destination: ToDoListView()) {
+                            NavigationLink(destination: ToDoListView(userId: viewModel.currentUserId)) {
                                 
                                 Text("To Do List")}
                         }

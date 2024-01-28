@@ -37,6 +37,7 @@
 		AD8262192B52B83E0013356E /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8262182B52B83E0013356E /* LoginViewViewModel.swift */; };
 		AD82621B2B52B84A0013356E /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82621A2B52B84A0013356E /* RegisterViewViewModel.swift */; };
 		AD82621D2B52BC230013356E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82621C2B52BC230013356E /* HeaderView.swift */; };
+		ADFDE4B72B667C8D00460EDD /* HomePageViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFDE4B62B667C8D00460EDD /* HomePageViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		AD8262182B52B83E0013356E /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		AD82621A2B52B84A0013356E /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		AD82621C2B52BC230013356E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		ADFDE4B62B667C8D00460EDD /* HomePageViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +242,7 @@
 		AD8261F62B52B5890013356E /* Homepage */ = {
 			isa = PBXGroup;
 			children = (
+				ADFDE4B52B667C7600460EDD /* ViewModels */,
 				AD8262062B52B7530013356E /* Views */,
 			);
 			path = Homepage;
@@ -279,6 +282,14 @@
 				AD82620C2B52B7C30013356E /* ToDoListItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		ADFDE4B52B667C7600460EDD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ADFDE4B62B667C8D00460EDD /* HomePageViewViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,6 +434,7 @@
 				AD8262132B52B8150013356E /* ToDoListItemViewViewModel.swift in Sources */,
 				AD82620D2B52B7C30013356E /* ToDoListItem.swift in Sources */,
 				AD6694712B61377D0008339A /* ButtonView.swift in Sources */,
+				ADFDE4B72B667C8D00460EDD /* HomePageViewViewModel.swift in Sources */,
 				AD8261FF2B52B6AB0013356E /* LoginView.swift in Sources */,
 				AD8261C02B52ABFD0013356E /* MainView.swift in Sources */,
 				AD8262112B52B8070013356E /* NewItemViewViewModel.swift in Sources */,
