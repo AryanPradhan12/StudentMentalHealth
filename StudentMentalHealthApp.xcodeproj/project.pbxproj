@@ -37,6 +37,7 @@
 		AD8262192B52B83E0013356E /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8262182B52B83E0013356E /* LoginViewViewModel.swift */; };
 		AD82621B2B52B84A0013356E /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82621A2B52B84A0013356E /* RegisterViewViewModel.swift */; };
 		AD82621D2B52BC230013356E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82621C2B52BC230013356E /* HeaderView.swift */; };
+		ADAA47BA2B66DB5C004978F2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAA47B92B66DB5C004978F2 /* Launch Screen.storyboard */; };
 		ADFDE4B72B667C8D00460EDD /* HomePageViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFDE4B62B667C8D00460EDD /* HomePageViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		AD8262182B52B83E0013356E /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		AD82621A2B52B84A0013356E /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		AD82621C2B52BC230013356E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		ADAA47B92B66DB5C004978F2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		ADFDE4B62B667C8D00460EDD /* HomePageViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,6 +217,7 @@
 				AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */,
 				AD8261EE2B52B1EC0013356E /* GoogleService-Info.plist */,
 				AD6694722B6146D70008339A /* Extensions.swift */,
+				ADAA47B92B66DB5C004978F2 /* Launch Screen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 			files = (
 				AD8261C52B52ABFE0013356E /* Preview Assets.xcassets in Resources */,
 				AD8261C22B52ABFE0013356E /* Assets.xcassets in Resources */,
+				ADAA47BA2B66DB5C004978F2 /* Launch Screen.storyboard in Resources */,
 				AD8261EF2B52B1EC0013356E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,6 +620,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -643,6 +648,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
