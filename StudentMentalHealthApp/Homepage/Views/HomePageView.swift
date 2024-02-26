@@ -10,7 +10,7 @@ import SwiftUI
 struct HomePageView: View {
 @StateObject var viewModel = HomePageViewViewModel()
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ZStack {
                 Color("BkColor")
                     .ignoresSafeArea()

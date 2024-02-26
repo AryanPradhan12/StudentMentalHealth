@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD27D06C2B8CC78200E1EEF7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AD27D06B2B8CC78200E1EEF7 /* FirebaseFirestore */; };
+		AD27D06E2B8CC78C00E1EEF7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AD27D06D2B8CC78C00E1EEF7 /* FirebaseAuth */; };
+		AD27D0702B8CC79800E1EEF7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD27D06F2B8CC79800E1EEF7 /* FirebaseFirestoreSwift */; };
 		AD6694712B61377D0008339A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6694702B61377D0008339A /* ButtonView.swift */; };
 		AD6694732B6146D70008339A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6694722B6146D70008339A /* Extensions.swift */; };
 		AD8261BE2B52ABFD0013356E /* StudentMentalHealthAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */; };
@@ -16,10 +19,6 @@
 		AD8261CF2B52ABFE0013356E /* StudentMentalHealthAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261CE2B52ABFE0013356E /* StudentMentalHealthAppTests.swift */; };
 		AD8261D92B52ABFE0013356E /* StudentMentalHealthAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261D82B52ABFE0013356E /* StudentMentalHealthAppUITests.swift */; };
 		AD8261DB2B52ABFE0013356E /* StudentMentalHealthAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261DA2B52ABFE0013356E /* StudentMentalHealthAppUITestsLaunchTests.swift */; };
-		AD8261E92B52B0340013356E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AD8261E82B52B0340013356E /* FirebaseAuth */; };
-		AD8261EB2B52B0340013356E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AD8261EA2B52B0340013356E /* FirebaseFirestore */; };
-		AD8261ED2B52B0340013356E /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD8261EC2B52B0340013356E /* FirebaseFirestoreSwift */; };
-		AD8261EF2B52B1EC0013356E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD8261EE2B52B1EC0013356E /* GoogleService-Info.plist */; };
 		AD8261F82B52B63D0013356E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261F72B52B63D0013356E /* ProfileView.swift */; };
 		AD8261FB2B52B6710013356E /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261FA2B52B6710013356E /* ToDoListView.swift */; };
 		AD8261FD2B52B6920013356E /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261FC2B52B6920013356E /* NewItemView.swift */; };
@@ -37,6 +36,7 @@
 		AD8262192B52B83E0013356E /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8262182B52B83E0013356E /* LoginViewViewModel.swift */; };
 		AD82621B2B52B84A0013356E /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82621A2B52B84A0013356E /* RegisterViewViewModel.swift */; };
 		AD82621D2B52BC230013356E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82621C2B52BC230013356E /* HeaderView.swift */; };
+		AD8B98172B8BCDE300CB7AAF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD8B98162B8BCDE300CB7AAF /* GoogleService-Info.plist */; };
 		ADAA47BA2B66DB5C004978F2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAA47B92B66DB5C004978F2 /* Launch Screen.storyboard */; };
 		ADFDE4B72B667C8D00460EDD /* HomePageViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFDE4B62B667C8D00460EDD /* HomePageViewViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -71,7 +71,6 @@
 		AD8261D42B52ABFE0013356E /* StudentMentalHealthAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentMentalHealthAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8261D82B52ABFE0013356E /* StudentMentalHealthAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMentalHealthAppUITests.swift; sourceTree = "<group>"; };
 		AD8261DA2B52ABFE0013356E /* StudentMentalHealthAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMentalHealthAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		AD8261EE2B52B1EC0013356E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD8261F72B52B63D0013356E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		AD8261FA2B52B6710013356E /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
 		AD8261FC2B52B6920013356E /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
@@ -89,6 +88,7 @@
 		AD8262182B52B83E0013356E /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		AD82621A2B52B84A0013356E /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		AD82621C2B52BC230013356E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		AD8B98162B8BCDE300CB7AAF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADAA47B92B66DB5C004978F2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		ADFDE4B62B667C8D00460EDD /* HomePageViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,9 +98,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD8261E92B52B0340013356E /* FirebaseAuth in Frameworks */,
-				AD8261EB2B52B0340013356E /* FirebaseFirestore in Frameworks */,
-				AD8261ED2B52B0340013356E /* FirebaseFirestoreSwift in Frameworks */,
+				AD27D06C2B8CC78200E1EEF7 /* FirebaseFirestore in Frameworks */,
+				AD27D06E2B8CC78C00E1EEF7 /* FirebaseAuth in Frameworks */,
+				AD27D0702B8CC79800E1EEF7 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +121,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD27D06A2B8CC78200E1EEF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD8261B12B52ABFC0013356E = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +135,7 @@
 				AD8261CD2B52ABFE0013356E /* StudentMentalHealthAppTests */,
 				AD8261D72B52ABFE0013356E /* StudentMentalHealthAppUITests */,
 				AD8261BB2B52ABFD0013356E /* Products */,
+				AD27D06A2B8CC78200E1EEF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -214,8 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				AD8261C12B52ABFE0013356E /* Assets.xcassets */,
+				AD8B98162B8BCDE300CB7AAF /* GoogleService-Info.plist */,
 				AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */,
-				AD8261EE2B52B1EC0013356E /* GoogleService-Info.plist */,
 				AD6694722B6146D70008339A /* Extensions.swift */,
 				ADAA47B92B66DB5C004978F2 /* Launch Screen.storyboard */,
 			);
@@ -312,9 +320,9 @@
 			);
 			name = StudentMentalHealthApp;
 			packageProductDependencies = (
-				AD8261E82B52B0340013356E /* FirebaseAuth */,
-				AD8261EA2B52B0340013356E /* FirebaseFirestore */,
-				AD8261EC2B52B0340013356E /* FirebaseFirestoreSwift */,
+				AD27D06B2B8CC78200E1EEF7 /* FirebaseFirestore */,
+				AD27D06D2B8CC78C00E1EEF7 /* FirebaseAuth */,
+				AD27D06F2B8CC79800E1EEF7 /* FirebaseFirestoreSwift */,
 			);
 			productName = StudentMentalHealthApp;
 			productReference = AD8261BA2B52ABFD0013356E /* StudentMentalHealthApp.app */;
@@ -364,7 +372,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					AD8261B92B52ABFD0013356E = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -389,7 +397,7 @@
 			);
 			mainGroup = AD8261B12B52ABFC0013356E;
 			packageReferences = (
-				AD8261E72B52B0340013356E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AD27D0692B8CC72E00E1EEF7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = AD8261BB2B52ABFD0013356E /* Products */;
 			projectDirPath = "";
@@ -408,9 +416,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD8261C52B52ABFE0013356E /* Preview Assets.xcassets in Resources */,
+				AD8B98172B8BCDE300CB7AAF /* GoogleService-Info.plist in Resources */,
 				AD8261C22B52ABFE0013356E /* Assets.xcassets in Resources */,
 				ADAA47BA2B66DB5C004978F2 /* Launch Screen.storyboard in Resources */,
-				AD8261EF2B52B1EC0013356E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +537,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -589,6 +598,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -617,11 +627,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"StudentMentalHealthApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SMH;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -645,11 +657,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"StudentMentalHealthApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SMH;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -777,30 +791,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AD8261E72B52B0340013356E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		AD27D0692B8CC72E00E1EEF7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 10.0.0;
+				minimumVersion = 10.21.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AD8261E82B52B0340013356E /* FirebaseAuth */ = {
+		AD27D06B2B8CC78200E1EEF7 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AD8261E72B52B0340013356E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		AD8261EA2B52B0340013356E /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AD8261E72B52B0340013356E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = AD27D0692B8CC72E00E1EEF7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
 		};
-		AD8261EC2B52B0340013356E /* FirebaseFirestoreSwift */ = {
+		AD27D06D2B8CC78C00E1EEF7 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AD8261E72B52B0340013356E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = AD27D0692B8CC72E00E1EEF7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AD27D06F2B8CC79800E1EEF7 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD27D0692B8CC72E00E1EEF7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

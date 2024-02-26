@@ -19,7 +19,7 @@ struct ToDoListView: View {
     
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack {
                 List(items) { item in
                     ToDoListItemView(item: item)

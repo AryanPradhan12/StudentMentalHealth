@@ -11,7 +11,7 @@ struct ProfileView: View {
     @StateObject var viewModel = ProfileViewViewModel()
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack {
                 if let user = viewModel.user {
                     profile(user: user)
@@ -41,18 +41,21 @@ struct ProfileView: View {
                 Text("Name:")
                     .bold()
                 Text(user.name)
+                    .underline()
             }
             .padding()
             HStack {
                 Text("Email:")
                     .bold()
                 Text(user.email)
+                    .underline()
             }
             .padding()
             HStack {
                 Text("Member Since:")
                     .bold()
                 Text("\(Date(timeIntervalSince1970: user.joined).formatted(date: .abbreviated, time: .shortened))")
+                    .underline()
             }
             .padding()
         }
@@ -62,8 +65,13 @@ struct ProfileView: View {
         Button("Log Out") {
             viewModel.logOut()
         }
-        .tint(.red)
+        .tint(.white)
+        .fontWeight(.semibold)
         .padding()
+        .padding(.horizontal, 20)
+        .background(Color.red
+            .cornerRadius(10)
+            .shadow(radius: 10))
         
         Spacer()
         
