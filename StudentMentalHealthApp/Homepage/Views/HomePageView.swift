@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomePageView: View {
-@StateObject var viewModel = HomePageViewViewModel()
+    @StateObject var viewModel = HomePageViewViewModel()
     var body: some View {
         NavigationView {
             ZStack {
@@ -16,28 +16,37 @@ struct HomePageView: View {
                     .ignoresSafeArea()
                 VStack {
                     Text("Home Page")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.red)
-                
-                    List {
-                        Section("Features") {
-                            NavigationLink(destination: ToDoListView(userId: viewModel.currentUserId)) {
-                                
-                                Text("To Do List")}
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                    HStack {
+                        NavigationLink(destination: NotificationView()) {
+                            Image("Notificationsimage")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 50, height: 50)
                         }
                     }
-                    .foregroundColor(.red)
-                    .fontWeight(.bold)
-                    .padding()
-                    .background(Color.green)
+                        .offset(x:135, y: -65)
+                        List {
+                            Section("Features") {
+                                NavigationLink(destination: ToDoListView(userId: viewModel.currentUserId)) {
+                                    
+                                    Text("To Do List")}
+                            }
+                        }
+                        .foregroundColor(.red)
+                        .fontWeight(.bold)
+                        .padding()
+                        .background(Color.green)
+                    }
                 }
             }
         }
     }
-}
-struct HomePageView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomePageView()
+    struct HomePageView_Previews: PreviewProvider {
+        static var previews: some View {
+            HomePageView()
+        }
     }
-}
+

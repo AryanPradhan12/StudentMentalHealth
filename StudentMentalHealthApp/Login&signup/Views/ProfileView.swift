@@ -72,7 +72,6 @@ struct ProfileView: View {
         .background(Color.red
             .cornerRadius(10)
             .shadow(radius: 10))
-        //change
         
         Spacer()
         
