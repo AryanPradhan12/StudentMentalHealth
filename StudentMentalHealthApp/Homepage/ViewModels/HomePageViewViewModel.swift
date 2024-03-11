@@ -7,6 +7,7 @@
 
 import FirebaseAuth
 import Foundation
+import FirebaseFirestore
 
 //Had to allow To Do List page to identify the userId which had to be said in the homepage (so this class is a copy paste of MainViewViewModel).
 class HomePageViewViewModel: ObservableObject {
@@ -23,4 +24,6 @@ class HomePageViewViewModel: ObservableObject {
     public var isSignedIn: Bool {
         return Auth.auth().currentUser != nil
     }
+
 }
+

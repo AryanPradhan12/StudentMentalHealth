@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct HomePageView: View {
+    @StateObject var viewModel2 = ProfileViewViewModel()
     @StateObject var viewModel = HomePageViewViewModel()
     var body: some View {
         NavigationView {
@@ -19,6 +21,16 @@ struct HomePageView: View {
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(Color.red)
+                    if let userName = viewModel2.user?.name {
+                        Text("Welcome, \(userName)")
+                            .foregroundColor(Color.red)
+                            .fontWeight(.semibold)
+                                       } else {
+                                           Text("Welcome")
+                                               .foregroundColor(Color.red)
+                                               .fontWeight(.semibold)
+                        //Used if let, else statement to give the 'userName' property to the data collection from 'viewModel2' so then I can write 'userName' to print the name.
+                                       }
                     HStack {
                         NavigationLink(destination: NotificationView()) {
                             Image("Notificationsimage")
@@ -41,6 +53,10 @@ struct HomePageView: View {
                         .background(Color.green)
                     }
                 }
+            .onAppear {
+                viewModel2.fetchUser()
+                //Fetching user details when the screen appears so that the app can print our user name by finding their data.
+            }
             }
         }
     }

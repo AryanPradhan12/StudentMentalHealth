@@ -48,24 +48,83 @@ static let instance = NotificationsManager()
 
 struct NotificationView: View {
     var body: some View {
-        VStack() {
-            Button("Request permission") {
-                NotificationsManager.instance.requestAuthorization()
+        ZStack {
+            Color.orange
+                .ignoresSafeArea()
+            Text("Notifications Center")
+                .offset(y:-350)
+                .bold()
+                .font(.system(size: 35))
+                .foregroundColor(Color.white)
+            VStack {
+                Rectangle()
+                    .fill(Color.white)
+                    .frame(width: 400, height: 150)
+                    .overlay(
+                        VStack {
+                            Text(Constants.Notificationstext)
+                                .foregroundColor(Color.orange)
+                                .font(.system(size: 25))
+                                .fontWeight(.semibold)
+                            Text(Constants.Notificationstext2)
+                                .foregroundColor(Color.red)
+                                .font(.system(size: 18))
+                        }
+                )
             }
-            Button("Schedule notification") {
-                NotificationsManager.instance.scheduleNotifications()
+            .offset(y:-240)
+            Rectangle()
+                .fill(Color.white)
+                .frame(width: 400, height: 300)
+                .overlay(
+            VStack() {
+            Text("First allow us to send you notifications...")
+                    .offset(y: -10)
+                    .foregroundColor(Color.red)
+                Button(action: {
+                    NotificationsManager.instance.requestAuthorization()
+                }) {
+                    Image("NotificationsRequest")
+                        .resizable()
+                        .frame(width: 80, height: 50)
+                }
+                .offset(y: -20)
+                
+                Text("Now click on this button to start the notifcations...")
+                    .offset(y: -30)
+                    .foregroundColor(Color.red)
+                Button(action: {
+                    NotificationsManager.instance.scheduleNotifications()
+                }) {
+                    Image("NotificationsSchedule")
+                        .resizable()
+                        .frame(width: 80, height: 50)
+                }
+                .offset(y: -40)
+                
+                Text("Click this button to cancel all notifications...")
+                    .offset(y: -50)
+                    .foregroundColor(Color.red)
+                
+                Button(action: {
+                    NotificationsManager.instance.cancelNotification()
+                }) {
+                    Image("NotificationsCancel")
+                        .resizable()
+                        .frame(width: 80, height: 50)
+                }
+                .offset(y: -60)
             }
-            Button("Cancel Notification") {
-                NotificationsManager.instance.cancelNotification()
+            .onAppear {
+                UIApplication.shared.applicationIconBadgeNumber = 0
             }
-        }
-        .onAppear {
-            UIApplication.shared.applicationIconBadgeNumber = 0
+            )
         }
     }
-   
 }
 
-#Preview {
-    NotificationView()
+struct NotificationView_Previews: PreviewProvider {
+    static var previews: some View {
+        NotificationView()
+    }
 }
