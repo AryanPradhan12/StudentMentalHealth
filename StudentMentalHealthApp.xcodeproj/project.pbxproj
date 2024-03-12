@@ -40,6 +40,7 @@
 		AD8B98172B8BCDE300CB7AAF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD8B98162B8BCDE300CB7AAF /* GoogleService-Info.plist */; };
 		ADAA47BA2B66DB5C004978F2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAA47B92B66DB5C004978F2 /* Launch Screen.storyboard */; };
 		ADCE5BDD2B9F43B900B9F61A /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE5BDC2B9F43B900B9F61A /* NotificationViewModel.swift */; };
+		ADE3AC8E2BA0AF3600BD0205 /* APIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3AC8D2BA0AF3600BD0205 /* APIViewModel.swift */; };
 		ADFDE4B72B667C8D00460EDD /* HomePageViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFDE4B62B667C8D00460EDD /* HomePageViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		AD8B98162B8BCDE300CB7AAF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADAA47B92B66DB5C004978F2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		ADCE5BDC2B9F43B900B9F61A /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		ADE3AC8D2BA0AF3600BD0205 /* APIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewModel.swift; sourceTree = "<group>"; };
 		ADFDE4B62B667C8D00460EDD /* HomePageViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -305,6 +307,7 @@
 			children = (
 				ADFDE4B62B667C8D00460EDD /* HomePageViewViewModel.swift */,
 				ADCE5BDC2B9F43B900B9F61A /* NotificationViewModel.swift */,
+				ADE3AC8D2BA0AF3600BD0205 /* APIViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				AD8262152B52B82B0013356E /* MainViewViewModel.swift in Sources */,
 				AD6694732B6146D70008339A /* Extensions.swift in Sources */,
 				AD8262032B52B7090013356E /* ToDoListItemView.swift in Sources */,
+				ADE3AC8E2BA0AF3600BD0205 /* APIViewModel.swift in Sources */,
 				ADCE5BDD2B9F43B900B9F61A /* NotificationViewModel.swift in Sources */,
 				AD82620F2B52B7FD0013356E /* ToDoListViewViewModel.swift in Sources */,
 				AD8261BE2B52ABFD0013356E /* StudentMentalHealthAppApp.swift in Sources */,
