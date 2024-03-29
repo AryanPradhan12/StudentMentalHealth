@@ -12,6 +12,7 @@
 		AD27D0702B8CC79800E1EEF7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD27D06F2B8CC79800E1EEF7 /* FirebaseFirestoreSwift */; };
 		AD6694712B61377D0008339A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6694702B61377D0008339A /* ButtonView.swift */; };
 		AD6694732B6146D70008339A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6694722B6146D70008339A /* Extensions.swift */; };
+		AD7268512BB04ABA002DC1AF /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7268502BB04ABA002DC1AF /* AudioManager.swift */; };
 		AD8261BE2B52ABFD0013356E /* StudentMentalHealthAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */; };
 		AD8261C02B52ABFD0013356E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261BF2B52ABFD0013356E /* MainView.swift */; };
 		AD8261C22B52ABFE0013356E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8261C12B52ABFE0013356E /* Assets.xcassets */; };
@@ -38,9 +39,16 @@
 		AD82621D2B52BC230013356E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD82621C2B52BC230013356E /* HeaderView.swift */; };
 		AD8A590E2B9E09A10092BC97 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8A590D2B9E09A10092BC97 /* NotificationView.swift */; };
 		AD8B98172B8BCDE300CB7AAF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD8B98162B8BCDE300CB7AAF /* GoogleService-Info.plist */; };
+		AD9364332BB0B7C400BB2494 /* meditation1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD9364322BB0B7C400BB2494 /* meditation1.mp3 */; };
 		ADAA47BA2B66DB5C004978F2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAA47B92B66DB5C004978F2 /* Launch Screen.storyboard */; };
+		ADAF57BB2BAEC9F400BA62A6 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF57BA2BAEC9F400BA62A6 /* MeditationView.swift */; };
+		ADAF57BD2BAEE1D700BA62A6 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF57BC2BAEE1D700BA62A6 /* PlayerView.swift */; };
+		ADAF57BF2BAEE4E500BA62A6 /* PlayBackControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF57BE2BAEE4E500BA62A6 /* PlayBackControlButton.swift */; };
 		ADCE5BDD2B9F43B900B9F61A /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE5BDC2B9F43B900B9F61A /* NotificationViewModel.swift */; };
+		ADDA97EB2BB0358E00487EAB /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDA97EA2BB0358E00487EAB /* MeditationViewModel.swift */; };
 		ADE3AC8E2BA0AF3600BD0205 /* APIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3AC8D2BA0AF3600BD0205 /* APIViewModel.swift */; };
+		ADF1623F2BA1F11000B8B96A /* GoalSettingHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF1623E2BA1F11000B8B96A /* GoalSettingHomePage.swift */; };
+		ADF162452BA1F6A800B8B96A /* GetHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF162442BA1F6A800B8B96A /* GetHelpView.swift */; };
 		ADFDE4B72B667C8D00460EDD /* HomePageViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFDE4B62B667C8D00460EDD /* HomePageViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +72,8 @@
 /* Begin PBXFileReference section */
 		AD6694702B61377D0008339A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		AD6694722B6146D70008339A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AD7268502BB04ABA002DC1AF /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		AD7268542BB04F95002DC1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AD8261BA2B52ABFD0013356E /* StudentMentalHealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentMentalHealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMentalHealthAppApp.swift; sourceTree = "<group>"; };
 		AD8261BF2B52ABFD0013356E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -93,9 +103,16 @@
 		AD82621C2B52BC230013356E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		AD8A590D2B9E09A10092BC97 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		AD8B98162B8BCDE300CB7AAF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AD9364322BB0B7C400BB2494 /* meditation1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation1.mp3; sourceTree = "<group>"; };
 		ADAA47B92B66DB5C004978F2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		ADAF57BA2BAEC9F400BA62A6 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
+		ADAF57BC2BAEE1D700BA62A6 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		ADAF57BE2BAEE4E500BA62A6 /* PlayBackControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayBackControlButton.swift; sourceTree = "<group>"; };
 		ADCE5BDC2B9F43B900B9F61A /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		ADDA97EA2BB0358E00487EAB /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
 		ADE3AC8D2BA0AF3600BD0205 /* APIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewModel.swift; sourceTree = "<group>"; };
+		ADF1623E2BA1F11000B8B96A /* GoalSettingHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSettingHomePage.swift; sourceTree = "<group>"; };
+		ADF162442BA1F6A800B8B96A /* GetHelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHelpView.swift; sourceTree = "<group>"; };
 		ADFDE4B62B667C8D00460EDD /* HomePageViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +151,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AD72684F2BB04AAE002DC1AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD7268502BB04ABA002DC1AF /* AudioManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		AD8261B12B52ABFC0013356E = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +183,10 @@
 		AD8261BC2B52ABFD0013356E /* StudentMentalHealthApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD7268542BB04F95002DC1AF /* Info.plist */,
+				ADAF57B82BAEC9E200BA62A6 /* Meditation */,
+				ADF162422BA1F68100B8B96A /* GetHelp */,
+				ADF1623B2BA1F0E300B8B96A /* GoalSetting */,
 				AD8261F62B52B5890013356E /* Homepage */,
 				AD8261F52B52B4E20013356E /* Todolist */,
 				AD8261F42B52B4AF0013356E /* Login&signup */,
@@ -228,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				AD8261C12B52ABFE0013356E /* Assets.xcassets */,
+				AD9364322BB0B7C400BB2494 /* meditation1.mp3 */,
 				AD8B98162B8BCDE300CB7AAF /* GoogleService-Info.plist */,
 				AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */,
 				AD6694722B6146D70008339A /* Extensions.swift */,
@@ -300,6 +330,74 @@
 				AD82620C2B52B7C30013356E /* ToDoListItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		ADAF57B82BAEC9E200BA62A6 /* Meditation */ = {
+			isa = PBXGroup;
+			children = (
+				AD72684F2BB04AAE002DC1AF /* Models */,
+				ADDA97E92BB0357400487EAB /* ViewModels */,
+				ADAF57B92BAEC9EA00BA62A6 /* Views */,
+			);
+			path = Meditation;
+			sourceTree = "<group>";
+		};
+		ADAF57B92BAEC9EA00BA62A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADAF57BA2BAEC9F400BA62A6 /* MeditationView.swift */,
+				ADAF57BC2BAEE1D700BA62A6 /* PlayerView.swift */,
+				ADAF57BE2BAEE4E500BA62A6 /* PlayBackControlButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ADDA97E92BB0357400487EAB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ADDA97EA2BB0358E00487EAB /* MeditationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ADF1623B2BA1F0E300B8B96A /* GoalSetting */ = {
+			isa = PBXGroup;
+			children = (
+				ADF1623D2BA1F0F700B8B96A /* ViewModels */,
+				ADF1623C2BA1F0F300B8B96A /* Views */,
+			);
+			path = GoalSetting;
+			sourceTree = "<group>";
+		};
+		ADF1623C2BA1F0F300B8B96A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADF1623E2BA1F11000B8B96A /* GoalSettingHomePage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ADF1623D2BA1F0F700B8B96A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ADF162422BA1F68100B8B96A /* GetHelp */ = {
+			isa = PBXGroup;
+			children = (
+				ADF162432BA1F68C00B8B96A /* Views */,
+			);
+			path = GetHelp;
+			sourceTree = "<group>";
+		};
+		ADF162432BA1F68C00B8B96A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADF162442BA1F6A800B8B96A /* GetHelpView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		ADFDE4B52B667C7600460EDD /* ViewModels */ = {
@@ -427,6 +525,7 @@
 				AD8261C52B52ABFE0013356E /* Preview Assets.xcassets in Resources */,
 				AD8B98172B8BCDE300CB7AAF /* GoogleService-Info.plist in Resources */,
 				AD8261C22B52ABFE0013356E /* Assets.xcassets in Resources */,
+				AD9364332BB0B7C400BB2494 /* meditation1.mp3 in Resources */,
 				ADAA47BA2B66DB5C004978F2 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,22 +555,29 @@
 				AD82620D2B52B7C30013356E /* ToDoListItem.swift in Sources */,
 				AD6694712B61377D0008339A /* ButtonView.swift in Sources */,
 				ADFDE4B72B667C8D00460EDD /* HomePageViewViewModel.swift in Sources */,
+				ADDA97EB2BB0358E00487EAB /* MeditationViewModel.swift in Sources */,
+				ADAF57BF2BAEE4E500BA62A6 /* PlayBackControlButton.swift in Sources */,
 				AD8A590E2B9E09A10092BC97 /* NotificationView.swift in Sources */,
 				AD8261FF2B52B6AB0013356E /* LoginView.swift in Sources */,
 				AD8261C02B52ABFD0013356E /* MainView.swift in Sources */,
 				AD8262112B52B8070013356E /* NewItemViewViewModel.swift in Sources */,
 				AD8261FB2B52B6710013356E /* ToDoListView.swift in Sources */,
+				ADAF57BD2BAEE1D700BA62A6 /* PlayerView.swift in Sources */,
 				AD82621D2B52BC230013356E /* HeaderView.swift in Sources */,
+				ADF162452BA1F6A800B8B96A /* GetHelpView.swift in Sources */,
 				AD8262192B52B83E0013356E /* LoginViewViewModel.swift in Sources */,
 				AD8262012B52B6C20013356E /* RegisterView.swift in Sources */,
 				AD82621B2B52B84A0013356E /* RegisterViewViewModel.swift in Sources */,
+				ADF1623F2BA1F11000B8B96A /* GoalSettingHomePage.swift in Sources */,
 				AD8261F82B52B63D0013356E /* ProfileView.swift in Sources */,
+				ADAF57BB2BAEC9F400BA62A6 /* MeditationView.swift in Sources */,
 				AD8262152B52B82B0013356E /* MainViewViewModel.swift in Sources */,
 				AD6694732B6146D70008339A /* Extensions.swift in Sources */,
 				AD8262032B52B7090013356E /* ToDoListItemView.swift in Sources */,
 				ADE3AC8E2BA0AF3600BD0205 /* APIViewModel.swift in Sources */,
 				ADCE5BDD2B9F43B900B9F61A /* NotificationViewModel.swift in Sources */,
 				AD82620F2B52B7FD0013356E /* ToDoListViewViewModel.swift in Sources */,
+				AD7268512BB04ABA002DC1AF /* AudioManager.swift in Sources */,
 				AD8261BE2B52ABFD0013356E /* StudentMentalHealthAppApp.swift in Sources */,
 				AD8262082B52B7610013356E /* HomePageView.swift in Sources */,
 				AD8262172B52B8340013356E /* ProfileViewViewModel.swift in Sources */,
@@ -639,6 +745,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"StudentMentalHealthApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StudentMentalHealthApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SMH;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -669,6 +776,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"StudentMentalHealthApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StudentMentalHealthApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SMH;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

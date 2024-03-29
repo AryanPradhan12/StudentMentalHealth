@@ -13,7 +13,7 @@ struct HeaderView: View {
         VStack {
             ZStack {
                 RoundedRectangle(cornerRadius: 0)
-                    .foregroundColor(.red)
+                    .foregroundColor(.homepagesectionsbackground)
                     .rotationEffect(Angle(degrees: 15),anchor: .center)
                 VStack {
                     Text("Student Mental Health")

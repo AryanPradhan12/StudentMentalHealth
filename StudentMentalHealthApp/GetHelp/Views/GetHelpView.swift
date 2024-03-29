@@ -9,9 +9,20 @@ import SwiftUI
 
 struct GetHelpView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            ZStack {
+                LinearGradient(colors: [.homepagesectionsbackground, .Mycolor], startPoint: .topLeading, endPoint: .bottomTrailing)
+                    .ignoresSafeArea()
+                VStack {
+                    Text("Get Help")
+                        .foregroundColor(.homepagetextcolor)
+                        .font(.system(size: 35))
+                        .bold()
+                        .offset(y: -350)
+                        .underline()
+                }
+            }
+        }
     }
-}
 
 #Preview {
     GetHelpView()

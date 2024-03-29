@@ -12,26 +12,24 @@ struct HomePageView: View {
     @StateObject var viewModel2 = ProfileViewViewModel()
     @StateObject var viewModel = HomePageViewViewModel()
     @StateObject private var viewModel3 = APIViewModel()
-    
-    let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
-    
+    @StateObject var audioManager = AudioManager()
     var body: some View {
         NavigationView {
             ZStack {
-                LinearGradient(colors: [.orange, .red], startPoint: .topLeading, endPoint: .bottomTrailing)
+                LinearGradient(colors: [.blue, .Mycolor], startPoint: .topLeading, endPoint: .bottomTrailing)
                     .ignoresSafeArea()
                 VStack {
                     Text("Home Page")
                         .font(.title)
                         .fontWeight(.bold)
-                        .foregroundColor(Color.red)
+                        .foregroundColor(Color.homepagetextcolor)
                     if let userName = viewModel2.user?.name {
                         Text("Welcome, \(userName)")
-                            .foregroundColor(Color.red)
+                            .foregroundColor(Color.homepagetextcolor)
                             .fontWeight(.semibold)
                     } else {
                         Text("Welcome")
-                            .foregroundColor(Color.red)
+                            .foregroundColor(Color.homepagetextcolor)
                             .fontWeight(.semibold)
                         //Used if let, else statement to give the 'userName' property to the data collection from 'viewModel2' so then I can write 'userName' to print the name.
                     }
@@ -40,46 +38,84 @@ struct HomePageView: View {
                             Image("Notificationsimage")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(width: 50, height: 50)
+                                .frame(width: 40, height: 40)
                         }
                     }
-                    .offset(x:135, y: -80)
+                    .offset(x:145, y: -70)
+                    
+                    HStack {
+                        NavigationLink(destination: GetHelpView()) {
+                            Image("GetHelpIcon")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 40, height: 40)
+                        }
+                    }
+                    .offset(x:-145, y: -115)
                     VStack {
                         Button(action: {
                             viewModel3.fetchQuote()
                         }) {
                             Image("APIButton")
                                 .resizable()
-                                .frame(width: 190, height: 50)
-                                .offset(y: -70)
+                                .frame(width: 160, height: 50)
                         }
                         .padding()
+                        .offset(y: 10)
                         
                         Text(viewModel3.quote)
-                            .font(.system(size: 15))
-                            .offset(y: -80)
-                        
+                            .font(.system(size: 12))
+                            .frame(width: 350)
                     }
-                    .foregroundColor(.red)
+                    .foregroundColor(.homepagetextcolor)
                     .fontWeight(.bold)
+                    .offset(y: -130)
                     
-                    LazyVGrid(columns: columns, spacing: 20) { // Use LazyVGrid for vertical grid layout
-                                          Section("Features") {
-                                              Rectangle()
-                                                  .frame(width:150, height: 100)
-                                                  .overlay(
-                                              NavigationLink(destination: ToDoListView(userId: viewModel.currentUserId)) {
-                                                  Text("To Do List")
-                                                      .foregroundColor(.red)
-                                              })
-                                          }
-                                          
+                    ScrollView {
+                        VStack(alignment: .leading) {
+                            Text("Features")
+                                .font(.system(size: 20))
+                                .fontWeight(.bold)
+                                .foregroundColor(.homepagetextcolor)
+                        }
+                        LazyHGrid(rows: [GridItem(.adaptive(minimum: 100))], spacing: 20) { // Use LazyVGrid for vertical grid layout
+                        Section {
+                            RoundedRectangle(cornerRadius: 25)
+                                .frame(width: 120, height: 100)
+                                .overlay(
+                                    NavigationLink(destination: ToDoListView(userId: viewModel.currentUserId)) {
+                                        VStack {
+                                            Image("Todolisticon")
+                                                .resizable()
+                                                .frame(width: 50, height: 40)
+                                            Text("To Do List")
+                                                .font(.system(size: 10))
+                                                .foregroundColor(.homepagesectiontextcolor)
+                                        }
+                                    })
+                        }
+                            Section {
+                      RoundedRectangle(cornerRadius: 25)
+                           .frame(width: 120, height: 100)
+                           .overlay(
+                            NavigationLink(destination: MeditationView(meditationVM: MeditationViewModel(meditation: Meditation.data)).environmentObject(audioManager)) {
+                                VStack {
+                                    Image("Meditationfeature")
+                                        .resizable()
+                                        .frame(width: 50, height: 40)
+                                    Text("Meditation")
+                                        .font(.system(size: 10))
+                                        .foregroundColor(.homepagesectiontextcolor)
+                                }
+                            })
+             }
+                }
                                           // Add more grid items here
                                       }
-                    .foregroundColor(.yellow)
-                    .background(Color.red)
-                                      .fontWeight(.bold)
+                    .foregroundColor(.homepagetextcolor)
+                                    .fontWeight(.bold)
                                       .padding()
+                                      .offset(y: -100)
                 }
             }
             .onAppear {
@@ -92,6 +128,7 @@ struct HomePageView: View {
     struct HomePageView_Previews: PreviewProvider {
         static var previews: some View {
             HomePageView()
+                .environmentObject(StudentMentalHealthAppApp().audioManager)
         }
     }
 

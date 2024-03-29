@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import SwiftUI
 extension Encodable {
     func asDictionary() -> [String: Any] {
         guard let data = try? JSONEncoder().encode(self) else {
@@ -20,4 +20,34 @@ extension Encodable {
             return [:]
         }
     }
+}
+
+extension Color {
+    static let Mycolor = Color("Gradientmixpurple")
+    static let homepagetextcolor = Color("slippergreen")
+    static let homepagesectiontextcolor = Color("Lightblue")
+    static let homepagesectionsbackground = Color("azureblue")
+}
+
+extension DateComponentsFormatter {
+    static let abbreviated: DateComponentsFormatter = {
+        print("Initializing DateComponentsFormatter.abbreviated")
+        let formatter = DateComponentsFormatter()
+        
+        formatter.allowedUnits = [.hour, .minute, .second]
+        formatter.unitsStyle = .abbreviated
+        
+        return formatter
+    }()
+    
+    static let positional: DateComponentsFormatter = {
+        print("Initializing DateComponentsFormatter.positional")
+        let formatter = DateComponentsFormatter()
+        
+        formatter.allowedUnits = [.minute, .second]
+        formatter.unitsStyle = .positional
+        formatter.zeroFormattingBehavior = .pad
+        
+        return formatter
+    }()
 }

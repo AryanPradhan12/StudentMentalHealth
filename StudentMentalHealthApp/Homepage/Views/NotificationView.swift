@@ -49,69 +49,84 @@ static let instance = NotificationsManager()
 struct NotificationView: View {
     var body: some View {
         ZStack {
-            Color.orange
+            LinearGradient(colors: [.homepagesectionsbackground, .homepagetextcolor], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()
             Text("Notifications Center")
                 .offset(y:-350)
                 .bold()
                 .font(.system(size: 35))
-                .foregroundColor(Color.white)
+                .foregroundColor(Color.Mycolor)
             VStack {
                 Rectangle()
-                    .fill(Color.white)
+                    .fill(Color.homepagesectiontextcolor)
                     .frame(width: 400, height: 150)
                     .overlay(
                         VStack {
                             Text(Constants.Notificationstext)
-                                .foregroundColor(Color.orange)
+                                .foregroundColor(Color.Mycolor)
                                 .font(.system(size: 25))
                                 .fontWeight(.semibold)
                             Text(Constants.Notificationstext2)
-                                .foregroundColor(Color.red)
+                                .foregroundColor(Color.purple)
                                 .font(.system(size: 18))
                         }
                 )
             }
             .offset(y:-240)
             Rectangle()
-                .fill(Color.white)
+                .fill(Color.homepagesectiontextcolor)
                 .frame(width: 400, height: 300)
                 .overlay(
             VStack() {
             Text("First allow us to send you notifications...")
                     .offset(y: -10)
-                    .foregroundColor(Color.red)
+                    .foregroundColor(Color.homepagesectionsbackground)
                 Button(action: {
                     NotificationsManager.instance.requestAuthorization()
                 }) {
-                    Image("NotificationsRequest")
-                        .resizable()
-                        .frame(width: 80, height: 50)
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.homepagetextcolor)
+                        .frame(width: 100, height: 40)
+                        .overlay(
+                        Text("Enable Notifications")
+                            .font(.system(size: 10))
+                            .foregroundColor(.black)
+                        )
                 }
                 .offset(y: -20)
                 
                 Text("Now click on this button to start the notifcations...")
                     .offset(y: -30)
-                    .foregroundColor(Color.red)
+                    .foregroundColor(Color.homepagesectionsbackground)
                 Button(action: {
                     NotificationsManager.instance.scheduleNotifications()
                 }) {
-                    Image("NotificationsSchedule")
-                        .resizable()
-                        .frame(width: 80, height: 50)
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.homepagetextcolor)
+                        .frame(width: 100, height: 40)
+                        .overlay(
+                        Text("Schedule Notifications")
+                            .font(.system(size: 10))
+                            .foregroundColor(.black)
+                        )
                 }
                 .offset(y: -40)
                 
                 Text("Click this button to cancel all notifications...")
                     .offset(y: -50)
-                    .foregroundColor(Color.red)
+                    .foregroundColor(Color.homepagesectionsbackground)
                 
                 Button(action: {
                     NotificationsManager.instance.cancelNotification()
                 }) {
-                    Image("NotificationsCancel")
-                        .resizable()
-                        .frame(width: 80, height: 50)
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.homepagetextcolor)
+                        .frame(width: 100, height: 40)
+                        .overlay(
+                        Text("Cancel Notifications")
+                            .font(.system(size: 10))
+                            .foregroundColor(.black)
+                        )
                 }
                 .offset(y: -60)
             }

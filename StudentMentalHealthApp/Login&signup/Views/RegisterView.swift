@@ -13,7 +13,7 @@ struct RegisterView: View {
         VStack {
             ZStack {
                 RoundedRectangle(cornerRadius: 0)
-                    .foregroundColor(.orange)
+                    .foregroundColor(.homepagesectiontextcolor)
                     .rotationEffect(Angle(degrees: -15),anchor: .center)
                 VStack {
                     Text("Register")
