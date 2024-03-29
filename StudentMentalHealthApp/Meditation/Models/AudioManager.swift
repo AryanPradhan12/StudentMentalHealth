@@ -9,7 +9,6 @@ import Foundation
 import AVKit
 
 final class AudioManager: ObservableObject {
-    
     var player: AVAudioPlayer?
     @Published private(set) var isPlaying: Bool = false {
         didSet {

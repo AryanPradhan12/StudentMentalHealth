@@ -15,6 +15,8 @@ struct PlayerView: View {
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var audioManager: AudioManager
     @State private var isEditing: Bool = false
+    
+    
     let timer = Timer
         .publish(every: 0.5, on: .main, in: .common)
         .autoconnect()
@@ -50,7 +52,7 @@ struct PlayerView: View {
                     .foregroundColor(.white)
                 Spacer()
 
-                    if let player = audioManager.player {
+                if let player = audioManager.player {
                         VStack(spacing: 5) {
                             Slider(value: $value, in: 0...player.duration) { editing in
                                 print("editing", editing)
@@ -98,7 +100,7 @@ struct PlayerView: View {
                             }
                         }
                     } else {
-                        Text("Audio player is not available")
+                        Text("Player is nil...")
                             .foregroundColor(.white)
                     }
             }
@@ -118,6 +120,6 @@ struct PlayerView_Previews: PreviewProvider {
     static let meditationVM = MeditationViewModel(meditation: Meditation.data)
     static var previews: some View {
         PlayerView(meditationVM: meditationVM, isPreview: true)
-            .environmentObject(StudentMentalHealthAppApp().audioManager)
+            .environmentObject(AudioManager())
     }
 }
