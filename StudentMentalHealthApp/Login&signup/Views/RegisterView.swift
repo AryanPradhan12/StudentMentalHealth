@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RegisterView: View {
     @StateObject var viewModel = RegisterViewViewModel()
+    @State private var errorMessageID = UUID()
     var body: some View {
         VStack {
             ZStack {
@@ -31,6 +32,7 @@ struct RegisterView: View {
             .offset(y: -100)
             .padding(.bottom, 50)
             //End of header
+            
             Form {
                 TextField("Full Name", text: $viewModel.name)
                     .textFieldStyle(DefaultTextFieldStyle())
@@ -46,11 +48,19 @@ struct RegisterView: View {
                 
                 ButtonView(title: "Create Account", background: .green) {
                     viewModel.register()
+                    errorMessageID = UUID()
                 }
                 .padding()
             }
             .offset(y: -50)
             Spacer()
+            
+            if !viewModel.errorMessage.isEmpty {
+                            Text(viewModel.errorMessage)
+                                .foregroundColor(Color.red)
+                                .padding(.vertical, 10)
+                                .id(errorMessageID)
+                        }
         }
         
     }

@@ -16,10 +16,19 @@ class LoginViewViewModel: ObservableObject {
     
     func login() {
         guard validate() else {
+            errorMessage = "Invalid email or password."
             return
         }
         //Try log the user in
-        Auth.auth().signIn(withEmail: email, password: password)
+        Auth.auth().signIn(withEmail: email, password: password)  { [weak self] authResult, error in
+            guard let strongSelf = self else { return }
+            if let error = error {
+                strongSelf.errorMessage = error.localizedDescription
+            } else {
+                // Login successful
+                strongSelf.errorMessage = ""
+            }
+        }
     }
     
     private func validate() -> Bool {
