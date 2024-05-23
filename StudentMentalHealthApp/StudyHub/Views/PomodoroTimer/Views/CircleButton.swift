@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct CircleButton: View {
+    let icon: String
+    let action: () -> Void
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button {
+            action()
+        } label: {
+            Image(systemName: icon)
+                .foregroundColor(Color("Light"))
+                .frame(width: 60, height: 60)
+                .background(Color("Dark")).opacity(0.5)
+                .clipShape(Circle())
+        }
     }
 }
 
 #Preview {
-    CircleButton()
+    CircleButton(icon: "play.fill") {
+        print("hello")
+    }
 }

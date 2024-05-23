@@ -110,6 +110,21 @@ struct HomePageView: View {
                             })
              }
                 }
+                        Section {
+                  RoundedRectangle(cornerRadius: 25)
+                       .frame(width: 270, height: 100)
+                       .overlay(
+                        NavigationLink(destination: GameView()) {
+                            VStack {
+                                Image("GameIcon")
+                                    .resizable()
+                                    .frame(width: 50, height: 40)
+                                Text("Memory game")
+                                    .font(.system(size: 10))
+                                    .foregroundColor(.homepagesectiontextcolor)
+                            }
+                        })
+         }
                                           // Add more grid items here
                                       }
                     .foregroundColor(.homepagetextcolor)

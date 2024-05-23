@@ -8,8 +8,50 @@
 import SwiftUI
 
 struct StudyView: View {
+
+    @State private var isVisible = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ZStack {
+                Color.homepagetextcolor
+                    .ignoresSafeArea()
+                VStack {
+                    if isVisible {
+                        Text("Welcome to the Study HUB!")
+                            .bold()
+                            .font(.system(size: 25))
+                            .animation(.easeInOut(duration: 1.0))
+                        Spacer()
+                    }
+                }
+                .onAppear {
+                            withAnimation {
+                                self.isVisible = true
+                            }
+                        }
+                
+                VStack {
+                    RoundedRectangle(cornerRadius: 15)
+                        .frame(width: 100, height: 100)
+                        .foregroundColor(.blue)
+                        .overlay(
+                            NavigationLink(
+                                destination: PomodoroView(),
+                                label: {
+                                    VStack {
+                                        Image(systemName: "timer")
+                                            .foregroundColor(.white)
+                                            .font(.system(size: 40))
+                                        Text("Pomodoro Timer")
+                                            .foregroundColor(.white)
+                                            .fontWeight(.semibold)
+                                            .font(.system(size: 15))
+                                    }
+                                }))
+                }
+                .offset(x: -90, y: -250)
+            }
+        }
     }
 }
 

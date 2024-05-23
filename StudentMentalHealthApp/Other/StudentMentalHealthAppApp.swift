@@ -20,9 +20,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct StudentMentalHealthAppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
     @StateObject var audioManager = AudioManager()
-    
     var body: some Scene {
         WindowGroup {
             MainView()

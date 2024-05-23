@@ -22,6 +22,14 @@ struct MainView: View {
                         .tabItem {
                             Label("Profile", systemImage: "person.circle")
                         }
+                    MotivationView()
+                        .tabItem {
+                            Label("MotivationHub", systemImage: "figure.strengthtraining.traditional")
+                        }
+                    StudyView()
+                        .tabItem {
+                            Label("StudyHub", systemImage: "graduationcap.fill")
+                        }
                 }
             } else {
                 LoginView()
