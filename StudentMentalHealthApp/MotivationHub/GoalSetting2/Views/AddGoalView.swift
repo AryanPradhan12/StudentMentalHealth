@@ -1,18 +1,18 @@
 //
-//  GoalSettingHomePage.swift
+//  AddGoalView.swift
 //  StudentMentalHealthApp
 //
-//  Created by Aryan Pradhan on 13/03/2024.
+//  Created by Aryan Pradhan on 05/06/2024.
 //
 
 import SwiftUI
 
-struct GoalSettingHomePage: View {
+struct AddGoalView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    GoalSettingHomePage()
+    AddGoalView()
 }
