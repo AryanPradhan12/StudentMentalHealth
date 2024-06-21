@@ -8,11 +8,40 @@
 import SwiftUI
 
 struct GoalListView: View {
+    @StateObject private var viewModel = GoalViewModel()
+    @State private var showingAddGoalView = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                GoalProgressView(goals: viewModel.goals)
+                
+                ScrollView {
+                    VStack {
+                        ForEach(viewModel.goals) { goal in
+                            GoalItemView(
+                                goal: goal,
+                                toggleIsDone: viewModel.toggleIsDone,
+                                deleteGoal: { goal in viewModel.deleteGoal(goal) }
+                            )
+                            .padding(.horizontal)
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Goals")
+            .navigationBarItems(trailing: Button("Add Goal") {
+                showingAddGoalView = true
+            })
+            .sheet(isPresented: $showingAddGoalView) {
+                AddGoalView(viewModel: viewModel, isPresented: $showingAddGoalView)
+            }
+        }
     }
 }
 
-#Preview {
-    GoalListView()
+struct GoalListView_Previews: PreviewProvider {
+    static var previews: some View {
+        GoalListView()
+    }
 }

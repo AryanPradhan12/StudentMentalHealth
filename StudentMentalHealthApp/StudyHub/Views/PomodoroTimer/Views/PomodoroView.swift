@@ -14,64 +14,74 @@ struct PomodoroView: View {
     @Environment(\.scenePhase) var scenePhase
     
     var body: some View {
-        VStack {
-            // circle
-            CircleTimer(fraction: timer.fractionPassed, primaryText: timer.secondsLeftString, secondaryText: timer.mode.rawValue)
+        ZStack {
             
-            // buttons
-            HStack {
-                // skip button
-                if timer.state == .idle && timer.mode == .pause {
-                    CircleButton(icon: "forward.fill") {
-                        timer.skip()
+            VStack {
+                
+                Text("Pomodoro Timer")
+                    .font(.title)
+                    .bold()
+                    .foregroundColor(.white)
+                    .padding(.bottom, 150)
+                
+                // circle
+                CircleTimer(fraction: timer.fractionPassed, primaryText: timer.secondsLeftString, secondaryText: timer.mode.rawValue)
+                
+                // buttons
+                HStack {
+                    // skip button
+                    if timer.state == .idle && timer.mode == .pause {
+                        CircleButton(icon: "forward.fill") {
+                            timer.skip()
+                        }
                     }
-                }
                     
                     
-                // start button
-                if timer.state == .idle {
-                    CircleButton(icon: "play.fill") {
-                        timer.start()
+                    // start button
+                    if timer.state == .idle {
+                        CircleButton(icon: "play.fill") {
+                            timer.start()
+                        }
+                    }
+                    // resume button
+                    if timer.state == .paused {
+                        CircleButton(icon: "play.fill") {
+                            timer.resume()
+                        }
+                    }
+                    // pause button
+                    if timer.state == .running {
+                        CircleButton(icon: "pause.fill") {
+                            timer.pause()
+                        }
+                    }
+                    // reset button
+                    if timer.state == .running || timer.state == .paused {
+                        CircleButton(icon: "stop.fill") {
+                            timer.reset()
+                        }
                     }
                 }
-                // resume button
-                if timer.state == .paused {
-                    CircleButton(icon: "play.fill") {
-                        timer.resume()
-                    }
-                }
-                // pause button
-                if timer.state == .running {
-                    CircleButton(icon: "pause.fill") {
-                        timer.pause()
-                    }
-                }
-                // reset button
-                if timer.state == .running || timer.state == .paused {
-                    CircleButton(icon: "stop.fill") {
-                        timer.reset()
-                    }
+                // Notification disabled warning
+                if displayWarning {
+                    NotificationsDisabled()
                 }
             }
-            // Notification disabled warning
-            if displayWarning {
-                NotificationsDisabled()
-            }
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
-        RadialGradient(
-            gradient: Gradient(colors: [Color("Light"), Color("Dark")]),
-            center: .center,
-            startRadius: 5,
-            endRadius: 500
-        )
-        )
-        .onChange(of: scenePhase) {
-            if scenePhase == .active {
-                PomodoroNotification.checkAuthorization {
-                    authorized in
-                displayWarning = !authorized
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(
+                RadialGradient(
+                    gradient: Gradient(colors: [Color("Light"), Color("Dark")]),
+                    center: .center,
+                    startRadius: 5,
+                    endRadius: 500
+                )
+            )
+            .onChange(of: scenePhase) {
+                if scenePhase == .active {
+                    PomodoroNotification.checkAuthorization {
+                        authorized in
+                        displayWarning = !authorized
+                    }
                 }
             }
         }
