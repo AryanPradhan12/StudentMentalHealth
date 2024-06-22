@@ -15,7 +15,7 @@ struct MotivationView: View {
         NavigationView {
             GeometryReader { geo in
                 ZStack {
-                    Image("Meditationimage")
+                    Image("MotivationhubBG")
                         .resizable()
                         .scaledToFill()
                         .edgesIgnoringSafeArea(.all)

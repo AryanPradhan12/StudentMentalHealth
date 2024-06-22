@@ -12,6 +12,9 @@ struct ProfileView: View {
     
     var body: some View {
         NavigationView {
+            ZStack {
+                LinearGradient(colors: [.homepagesectionsbackground, .Mycolor], startPoint: .topLeading, endPoint: .bottomTrailing)
+                    .ignoresSafeArea()
                 VStack {
                     if let user = viewModel.user {
                         profile(user: user)
@@ -24,6 +27,7 @@ struct ProfileView: View {
             .onAppear {
                 viewModel.fetchUser()
             }
+        }
         }
     @ViewBuilder
     func profile(user: User) -> some View {
@@ -44,6 +48,10 @@ struct ProfileView: View {
                         .underline()
                 }
                 .padding()
+                .background(
+                RoundedRectangle(cornerRadius: 15)
+                    .fill(Color.white.opacity(0.7))
+                )
                 HStack {
                     Text("Email:")
                         .bold()
@@ -51,6 +59,10 @@ struct ProfileView: View {
                         .underline()
                 }
                 .padding()
+                .background(
+                RoundedRectangle(cornerRadius: 15)
+                    .fill(Color.white.opacity(0.7))
+                )
                 HStack {
                     Text("Member Since:")
                         .bold()
@@ -58,6 +70,10 @@ struct ProfileView: View {
                         .underline()
                 }
                 .padding()
+                .background(
+                RoundedRectangle(cornerRadius: 15)
+                    .fill(Color.white.opacity(0.7))
+                )
             }
             .padding()
             

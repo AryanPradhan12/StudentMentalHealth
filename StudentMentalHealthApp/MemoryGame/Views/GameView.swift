@@ -21,40 +21,46 @@ struct GameView: View {
     var body: some View {
         GeometryReader { geo in
             ZStack {
-                Color.purple
-                    .edgesIgnoringSafeArea(.all)
+                LinearGradient(colors: [.homepagesectionsbackground, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
+                    .ignoresSafeArea()
                 
-                VStack {
-                    Text("🍽️ Food Wars! 🍽️")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .underline()
-                        .foregroundColor(.white)
-                    
-                    LazyVGrid(columns: fourColumnGrid, spacing: 10) {
-                        ForEach(cards) { card in
-                            CardView(card: card, width: Int(geo.size.width / 4 - 10), MatchedCards: $MatchedCards, UserChoices: $UserChoices, showAlert: $showAlert)
-                        }
-                    }
-                    
+                ScrollView {
                     VStack {
-                        Text("Match these cards to win...")
-                            .fontWeight(.semibold)
+                        Text("🍽️ Food Wars! 🍽️")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
                             .underline()
                             .foregroundColor(.white)
+                            .padding(.top, 20)
                         
-                        LazyVGrid(columns: sixColumnGrid, spacing: 5) {
-                            ForEach(cardValues, id: \.self) { cardValue in
-                                if !MatchedCards.contains(where: { $0.text == cardValue }) {
-                                    Text(cardValue)
-                                        .font(.system(size: 40))
-                                        .foregroundColor(.white)
+                        LazyVGrid(columns: fourColumnGrid, spacing: 10) {
+                            ForEach(cards) { card in
+                                CardView(card: card, width: Int(geo.size.width / 4 - 10), MatchedCards: $MatchedCards, UserChoices: $UserChoices, showAlert: $showAlert)
+                            }
+                        }
+                        
+                        VStack {
+                            Text("Match these cards to win...")
+                                .fontWeight(.semibold)
+                                .underline()
+                                .foregroundColor(.white)
+                                .padding(.top, 20)
+                            
+                            LazyVGrid(columns: sixColumnGrid, spacing: 5) {
+                                ForEach(cardValues, id: \.self) { cardValue in
+                                    if !MatchedCards.contains(where: { $0.text == cardValue }) {
+                                        Text(cardValue)
+                                            .font(.system(size: 40))
+                                            .foregroundColor(.white)
+                                    }
                                 }
                             }
                         }
+                        .padding(.bottom, 100)
                     }
+                    .padding(.horizontal)
+                    .background(Color.clear)
                 }
-                .padding(.bottom, 100)
             }
             .alert(isPresented: $showAlert) {
                 Alert(
@@ -78,4 +84,3 @@ struct GameView: View {
 #Preview {
     GameView()
 }
-
