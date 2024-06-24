@@ -125,6 +125,22 @@ struct HomePageView: View {
                             }
                         })
          }
+                        Section {
+                  RoundedRectangle(cornerRadius: 25)
+                       .frame(width: 270, height: 100)
+                       .overlay(
+                        NavigationLink(destination: RateYourDayView()) {
+                            VStack {
+                                Image(systemName: "star.fill")
+                                    .resizable()
+                                    .foregroundColor(.black)
+                                    .frame(width: 40, height: 40)
+                                Text("Rate your day!")
+                                    .font(.system(size: 10))
+                                    .foregroundColor(.homepagesectiontextcolor)
+                            }
+                        })
+         }
                                           // Add more grid items here
                                       }
                     .foregroundColor(.homepagetextcolor)

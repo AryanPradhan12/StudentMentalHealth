@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD18BD112C29B07000E2CBBD /* RateYourDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD18BD102C29B07000E2CBBD /* RateYourDayView.swift */; };
 		AD27D06C2B8CC78200E1EEF7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AD27D06B2B8CC78200E1EEF7 /* FirebaseFirestore */; };
 		AD27D06E2B8CC78C00E1EEF7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AD27D06D2B8CC78C00E1EEF7 /* FirebaseAuth */; };
 		AD27D0702B8CC79800E1EEF7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD27D06F2B8CC79800E1EEF7 /* FirebaseFirestoreSwift */; };
@@ -89,6 +90,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD18BD102C29B07000E2CBBD /* RateYourDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateYourDayView.swift; sourceTree = "<group>"; };
 		AD3C94682BFF5ED200B3566D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AD3C946A2BFF647A00B3566D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		AD5C1B932C10C75E006FBD89 /* GoalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalModel.swift; sourceTree = "<group>"; };
@@ -182,6 +184,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD18BD0E2C29B04E00E2CBBD /* RateYourDay */ = {
+			isa = PBXGroup;
+			children = (
+				AD18BD0F2C29B05C00E2CBBD /* Views */,
+			);
+			path = RateYourDay;
+			sourceTree = "<group>";
+		};
+		AD18BD0F2C29B05C00E2CBBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD18BD102C29B07000E2CBBD /* RateYourDayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		AD27D06A2B8CC78200E1EEF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +284,7 @@
 		AD8261BC2B52ABFD0013356E /* StudentMentalHealthApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD18BD0E2C29B04E00E2CBBD /* RateYourDay */,
 				AD7268542BB04F95002DC1AF /* Info.plist */,
 				ADF9348B2BFA9A2800ACBCE0 /* MemoryGame */,
 				ADA143412BBC266700DB41B1 /* StudyHub */,
@@ -760,6 +779,7 @@
 				AD5C1B9B2C10C7BB006FBD89 /* GoalItemView.swift in Sources */,
 				ADE136062BFA2558000E88E7 /* CircleButton.swift in Sources */,
 				AD8262082B52B7610013356E /* HomePageView.swift in Sources */,
+				AD18BD112C29B07000E2CBBD /* RateYourDayView.swift in Sources */,
 				AD8262172B52B8340013356E /* ProfileViewViewModel.swift in Sources */,
 				AD82620A2B52B79B0013356E /* User.swift in Sources */,
 				AD8261FD2B52B6920013356E /* NewItemView.swift in Sources */,
