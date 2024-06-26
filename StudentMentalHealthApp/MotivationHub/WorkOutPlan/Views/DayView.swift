@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct DayView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    let viewModel: DayViewModel
 
-#Preview {
-    DayView()
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(viewModel.day)
+                .font(.largeTitle)
+                .bold()
+                .padding(.bottom, 10)
+            
+            ForEach(viewModel.exercises) { exercise in
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(exercise.name)
+                        .font(.headline)
+                    Text(exercise.details)
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                }
+                .padding()
+                .background(Color.white.opacity(0.8))
+                .cornerRadius(10)
+                .shadow(radius: 5)
+            }
+        }
+        .padding()
+        .background(Color.blue.opacity(0.1))
+        .cornerRadius(20)
+        .shadow(radius: 10)
+    }
 }

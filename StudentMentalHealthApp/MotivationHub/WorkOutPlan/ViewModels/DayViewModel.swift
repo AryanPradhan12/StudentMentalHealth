@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+struct Exercise: Identifiable {
+    let id = UUID()
+    let name: String
+    let details: String
+}
+
+struct DayViewModel {
+    let day: String
+    let exercises: [Exercise]
+}

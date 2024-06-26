@@ -56,6 +56,9 @@
 		ADAF57BB2BAEC9F400BA62A6 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF57BA2BAEC9F400BA62A6 /* MeditationView.swift */; };
 		ADAF57BD2BAEE1D700BA62A6 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF57BC2BAEE1D700BA62A6 /* PlayerView.swift */; };
 		ADAF57BF2BAEE4E500BA62A6 /* PlayBackControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAF57BE2BAEE4E500BA62A6 /* PlayBackControlButton.swift */; };
+		ADBC6F1E2C2C56A0008B396C /* WeeklyScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC6F1D2C2C56A0008B396C /* WeeklyScheduleView.swift */; };
+		ADBC6F202C2C56AA008B396C /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC6F1F2C2C56AA008B396C /* DayView.swift */; };
+		ADBC6F222C2C56BA008B396C /* DayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC6F212C2C56BA008B396C /* DayViewModel.swift */; };
 		ADCE5BDD2B9F43B900B9F61A /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE5BDC2B9F43B900B9F61A /* NotificationViewModel.swift */; };
 		ADDA97EB2BB0358E00487EAB /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDA97EA2BB0358E00487EAB /* MeditationViewModel.swift */; };
 		ADE135F82BF9F531000E88E7 /* tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = ADE135F72BF9F531000E88E7 /* tick.wav */; };
@@ -140,6 +143,9 @@
 		ADAF57BA2BAEC9F400BA62A6 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 		ADAF57BC2BAEE1D700BA62A6 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		ADAF57BE2BAEE4E500BA62A6 /* PlayBackControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayBackControlButton.swift; sourceTree = "<group>"; };
+		ADBC6F1D2C2C56A0008B396C /* WeeklyScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyScheduleView.swift; sourceTree = "<group>"; };
+		ADBC6F1F2C2C56AA008B396C /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		ADBC6F212C2C56BA008B396C /* DayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewModel.swift; sourceTree = "<group>"; };
 		ADCE5BDC2B9F43B900B9F61A /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		ADDA97EA2BB0358E00487EAB /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
 		ADE135F72BF9F531000E88E7 /* tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tick.wav; sourceTree = "<group>"; };
@@ -439,6 +445,7 @@
 		ADA1433D2BBC244D00DB41B1 /* MotivationHub */ = {
 			isa = PBXGroup;
 			children = (
+				ADBC6F1A2C2C566C008B396C /* WorkOutPlan */,
 				AD5C1B902C10C730006FBD89 /* GoalSetting2 */,
 				ADA1433E2BBC245900DB41B1 /* Views */,
 			);
@@ -506,6 +513,32 @@
 				ADAF57BE2BAEE4E500BA62A6 /* PlayBackControlButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		ADBC6F1A2C2C566C008B396C /* WorkOutPlan */ = {
+			isa = PBXGroup;
+			children = (
+				ADBC6F1C2C2C568A008B396C /* ViewModels */,
+				ADBC6F1B2C2C5684008B396C /* Views */,
+			);
+			path = WorkOutPlan;
+			sourceTree = "<group>";
+		};
+		ADBC6F1B2C2C5684008B396C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADBC6F1D2C2C56A0008B396C /* WeeklyScheduleView.swift */,
+				ADBC6F1F2C2C56AA008B396C /* DayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ADBC6F1C2C2C568A008B396C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ADBC6F212C2C56BA008B396C /* DayViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		ADDA97E92BB0357400487EAB /* ViewModels */ = {
@@ -738,6 +771,7 @@
 				AD5C1B972C10C77C006FBD89 /* GoalViewModel.swift in Sources */,
 				AD82620D2B52B7C30013356E /* ToDoListItem.swift in Sources */,
 				AD6694712B61377D0008339A /* ButtonView.swift in Sources */,
+				ADBC6F1E2C2C56A0008B396C /* WeeklyScheduleView.swift in Sources */,
 				ADFDE4B72B667C8D00460EDD /* HomePageViewViewModel.swift in Sources */,
 				ADDA97EB2BB0358E00487EAB /* MeditationViewModel.swift in Sources */,
 				ADAF57BF2BAEE4E500BA62A6 /* PlayBackControlButton.swift in Sources */,
@@ -753,6 +787,7 @@
 				AD8261FB2B52B6710013356E /* ToDoListView.swift in Sources */,
 				AD5C1B9E2C10C7DC006FBD89 /* GoalProgressView.swift in Sources */,
 				ADAF57BD2BAEE1D700BA62A6 /* PlayerView.swift in Sources */,
+				ADBC6F222C2C56BA008B396C /* DayViewModel.swift in Sources */,
 				AD82621D2B52BC230013356E /* HeaderView.swift in Sources */,
 				ADE136012BF9FEF9000E88E7 /* PomodoroTimer.swift in Sources */,
 				ADE135FD2BF9F581000E88E7 /* PomodoroAudio.swift in Sources */,
@@ -762,6 +797,7 @@
 				AD82621B2B52B84A0013356E /* RegisterViewViewModel.swift in Sources */,
 				AD8FAAC52BF8AE9C004F3C0C /* PomodoroView.swift in Sources */,
 				AD8261F82B52B63D0013356E /* ProfileView.swift in Sources */,
+				ADBC6F202C2C56AA008B396C /* DayView.swift in Sources */,
 				ADAF57BB2BAEC9F400BA62A6 /* MeditationView.swift in Sources */,
 				AD8262152B52B82B0013356E /* MainViewViewModel.swift in Sources */,
 				AD6694732B6146D70008339A /* Extensions.swift in Sources */,

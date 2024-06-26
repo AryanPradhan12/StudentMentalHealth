@@ -118,7 +118,7 @@ struct RateYourDayView: View {
     }
 
     private func checkIfRated() {
-        let currentDate = Date()
+        _ = Date()
         let calendar = Calendar.current
         
         if let lastRatedDate = UserDefaults.standard.object(forKey: "lastRatedDate") as? Date,

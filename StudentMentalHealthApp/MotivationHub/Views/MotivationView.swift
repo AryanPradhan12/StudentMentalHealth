@@ -57,6 +57,27 @@ struct MotivationView: View {
                                     }))
                     }
                     .offset(x: -75, y: -250)
+                    
+                    VStack {
+                        RoundedRectangle(cornerRadius: 15)
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(.blue)
+                            .overlay(
+                                NavigationLink(
+                                    destination: WeeklyScheduleView(),
+                                    label: {
+                                        VStack {
+                                            Image(systemName: "dumbbell")
+                                                .resizable()
+                                                .frame(width: 55, height: 35)
+                                                .foregroundColor(.white)
+                                            Text("WorkOutPlan")
+                                                .foregroundColor(.white)
+                                                .fontWeight(.semibold)
+                                                .font(.system(size: 15))
+                                        }
+                                    }))
+                    }
                 }
                 
             }
