@@ -11,6 +11,13 @@
 		AD27D06C2B8CC78200E1EEF7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AD27D06B2B8CC78200E1EEF7 /* FirebaseFirestore */; };
 		AD27D06E2B8CC78C00E1EEF7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AD27D06D2B8CC78C00E1EEF7 /* FirebaseAuth */; };
 		AD27D0702B8CC79800E1EEF7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD27D06F2B8CC79800E1EEF7 /* FirebaseFirestoreSwift */; };
+		AD3325C92C2D907B00CA235B /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3325C82C2D907B00CA235B /* VideoModel.swift */; };
+		AD3325CF2C2D919400CA235B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3325CE2C2D919400CA235B /* WebView.swift */; };
+		AD3325D12C2D926200CA235B /* VideoGalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3325D02C2D926200CA235B /* VideoGalleryViewModel.swift */; };
+		AD3325D32C2D93AA00CA235B /* VideoGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3325D22C2D93AA00CA235B /* VideoGalleryView.swift */; };
+		AD3325D52C2D98E900CA235B /* StudyVideoGalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3325D42C2D98E900CA235B /* StudyVideoGalleryViewModel.swift */; };
+		AD3325D72C2D991500CA235B /* StudyVideoGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3325D62C2D991500CA235B /* StudyVideoGalleryView.swift */; };
+		AD3325D92C2D9C7900CA235B /* MotivationPlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3325D82C2D9C7900CA235B /* MotivationPlaylistView.swift */; };
 		AD3C94692BFF5ED200B3566D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C94682BFF5ED200B3566D /* CardView.swift */; };
 		AD3C946B2BFF647A00B3566D /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C946A2BFF647A00B3566D /* GameView.swift */; };
 		AD5C1B942C10C75E006FBD89 /* GoalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C1B932C10C75E006FBD89 /* GoalModel.swift */; };
@@ -94,6 +101,13 @@
 
 /* Begin PBXFileReference section */
 		AD18BD102C29B07000E2CBBD /* RateYourDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateYourDayView.swift; sourceTree = "<group>"; };
+		AD3325C82C2D907B00CA235B /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		AD3325CE2C2D919400CA235B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		AD3325D02C2D926200CA235B /* VideoGalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGalleryViewModel.swift; sourceTree = "<group>"; };
+		AD3325D22C2D93AA00CA235B /* VideoGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGalleryView.swift; sourceTree = "<group>"; };
+		AD3325D42C2D98E900CA235B /* StudyVideoGalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyVideoGalleryViewModel.swift; sourceTree = "<group>"; };
+		AD3325D62C2D991500CA235B /* StudyVideoGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyVideoGalleryView.swift; sourceTree = "<group>"; };
+		AD3325D82C2D9C7900CA235B /* MotivationPlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationPlaylistView.swift; sourceTree = "<group>"; };
 		AD3C94682BFF5ED200B3566D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AD3C946A2BFF647A00B3566D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		AD5C1B932C10C75E006FBD89 /* GoalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalModel.swift; sourceTree = "<group>"; };
@@ -211,6 +225,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD3325C72C2D906700CA235B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AD3325C82C2D907B00CA235B /* VideoModel.swift */,
+				AD3325D02C2D926200CA235B /* VideoGalleryViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		AD3C94672BFF59F000B3566D /* ViewModels */ = {
@@ -445,6 +468,7 @@
 		ADA1433D2BBC244D00DB41B1 /* MotivationHub */ = {
 			isa = PBXGroup;
 			children = (
+				AD3325C72C2D906700CA235B /* ViewModels */,
 				ADBC6F1A2C2C566C008B396C /* WorkOutPlan */,
 				AD5C1B902C10C730006FBD89 /* GoalSetting2 */,
 				ADA1433E2BBC245900DB41B1 /* Views */,
@@ -456,6 +480,9 @@
 			isa = PBXGroup;
 			children = (
 				ADA1433F2BBC247600DB41B1 /* MotivationView.swift */,
+				AD3325CE2C2D919400CA235B /* WebView.swift */,
+				AD3325D22C2D93AA00CA235B /* VideoGalleryView.swift */,
+				AD3325D82C2D9C7900CA235B /* MotivationPlaylistView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -472,6 +499,7 @@
 		ADA143422BBC267100DB41B1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD3325D62C2D991500CA235B /* StudyVideoGalleryView.swift */,
 				ADA143432BBC267A00DB41B1 /* StudyView.swift */,
 				ADA1434A2BBC356200DB41B1 /* PomodoroTimer */,
 			);
@@ -481,6 +509,7 @@
 		ADA143472BBC32E500DB41B1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				AD3325D42C2D98E900CA235B /* StudyVideoGalleryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -767,9 +796,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD5C1B992C10C7A0006FBD89 /* GoalListView.swift in Sources */,
+				AD3325D12C2D926200CA235B /* VideoGalleryViewModel.swift in Sources */,
+				AD3325D92C2D9C7900CA235B /* MotivationPlaylistView.swift in Sources */,
 				AD8262132B52B8150013356E /* ToDoListItemViewViewModel.swift in Sources */,
 				AD5C1B972C10C77C006FBD89 /* GoalViewModel.swift in Sources */,
 				AD82620D2B52B7C30013356E /* ToDoListItem.swift in Sources */,
+				AD3325D52C2D98E900CA235B /* StudyVideoGalleryViewModel.swift in Sources */,
 				AD6694712B61377D0008339A /* ButtonView.swift in Sources */,
 				ADBC6F1E2C2C56A0008B396C /* WeeklyScheduleView.swift in Sources */,
 				ADFDE4B72B667C8D00460EDD /* HomePageViewViewModel.swift in Sources */,
@@ -782,8 +814,10 @@
 				AD8261C02B52ABFD0013356E /* MainView.swift in Sources */,
 				ADA143442BBC267A00DB41B1 /* StudyView.swift in Sources */,
 				ADE135FF2BF9F801000E88E7 /* PomodoroNotification.swift in Sources */,
+				AD3325D32C2D93AA00CA235B /* VideoGalleryView.swift in Sources */,
 				AD8262112B52B8070013356E /* NewItemViewViewModel.swift in Sources */,
 				AD5C1B942C10C75E006FBD89 /* GoalModel.swift in Sources */,
+				AD3325D72C2D991500CA235B /* StudyVideoGalleryView.swift in Sources */,
 				AD8261FB2B52B6710013356E /* ToDoListView.swift in Sources */,
 				AD5C1B9E2C10C7DC006FBD89 /* GoalProgressView.swift in Sources */,
 				ADAF57BD2BAEE1D700BA62A6 /* PlayerView.swift in Sources */,
@@ -802,9 +836,11 @@
 				AD8262152B52B82B0013356E /* MainViewViewModel.swift in Sources */,
 				AD6694732B6146D70008339A /* Extensions.swift in Sources */,
 				ADE136082BFA26DD000E88E7 /* CircleTimer.swift in Sources */,
+				AD3325C92C2D907B00CA235B /* VideoModel.swift in Sources */,
 				AD8262032B52B7090013356E /* ToDoListItemView.swift in Sources */,
 				ADE3AC8E2BA0AF3600BD0205 /* APIViewModel.swift in Sources */,
 				ADCE5BDD2B9F43B900B9F61A /* NotificationViewModel.swift in Sources */,
+				AD3325CF2C2D919400CA235B /* WebView.swift in Sources */,
 				AD82620F2B52B7FD0013356E /* ToDoListViewViewModel.swift in Sources */,
 				AD7268512BB04ABA002DC1AF /* AudioManager.swift in Sources */,
 				ADF9348E2BFA9A5E00ACBCE0 /* Memory.swift in Sources */,

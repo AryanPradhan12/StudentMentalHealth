@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct VideoGalleryView: View {
+    @ObservedObject var viewModel: VideoGalleryViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            ForEach(viewModel.videos) { video in
+                WebView(url: video.url)
+            }
+        }
+        .tabViewStyle(PageTabViewStyle())
     }
-}
-
-#Preview {
-    VideoGalleryView()
 }

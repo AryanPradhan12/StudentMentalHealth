@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class VideoGallery1ViewModel: ObservableObject {
+class StudyVideoGalleryViewModel: ObservableObject {
     @Published var videoURLs: [String] = [
         "https://www.youtube.com/embed/VM8CSYby9SQ?si=rNtCAh-CyuuCj8yD",
         "https://www.youtube.com/embed/upBKD20aZRE?si=7k-OaiZ4njjhElYw",

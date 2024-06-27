@@ -8,17 +8,16 @@
 import SwiftUI
 
 struct StudyView: View {
-
+    @StateObject private var videoGalleryViewModel = StudyVideoGalleryViewModel()
     @State private var isVisible = false
+    
     var body: some View {
         NavigationView {
-            GeometryReader { geo in
                 ZStack {
                     Image("StudyhubBG")
                         .resizable()
                         .scaledToFill()
                         .edgesIgnoringSafeArea(.all)
-                        .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                         .opacity(0.7)
                     
                     VStack {
@@ -26,7 +25,8 @@ struct StudyView: View {
                             Text("Welcome to the Study HUB!")
                                 .bold()
                                 .font(.system(size: 25))
-                                .animation(.easeInOut(duration: 1.0))
+                                .transition(.opacity)
+                                .animation(.easeInOut(duration: 1.0), value: isVisible)
                             Spacer()
                         }
                     }
@@ -35,7 +35,6 @@ struct StudyView: View {
                             self.isVisible = true
                         }
                     }
-                    
                     VStack {
                         RoundedRectangle(cornerRadius: 15)
                             .frame(width: 100, height: 100)
@@ -56,9 +55,13 @@ struct StudyView: View {
                                     }))
                     }
                     .offset(x: -90, y: -250)
+                    
+                    VStack {
+                        StudyVideoGalleryView(viewModel: videoGalleryViewModel)
+                            .frame(width: 250, height: 200)
+                    }
                 }
             }
-        }
     }
 }
 
