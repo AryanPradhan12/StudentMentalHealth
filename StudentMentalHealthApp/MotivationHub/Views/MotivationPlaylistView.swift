@@ -8,10 +8,38 @@
 import SwiftUI
 
 struct MotivationPlaylistView: View {
+    @StateObject private var viewModel = MotivationPlaylistViewModel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.blue
+                .ignoresSafeArea(.all)
+            
+            VStack {
+                
+                HStack {
+                    Text("A Playlist of Motivational Songs")
+                        .font(.title)
+                        .font(.system(size: 15))
+                        .underline()
+                }
+                
+                VStack {
+                    List(viewModel.items) { item in
+                        VStack(alignment: .leading) {
+                            Text(item.title)
+                                .font(.title)
+                                .bold()
+                                .font(.system(size: 14))
+                            Text(item.subtitle)
+                                .font(.subheadline)
+                                .font(.system(size: 12))
+                        }
+                    }
+                }
+            }
+        }
+        }
     }
-}
 
 #Preview {
     MotivationPlaylistView()

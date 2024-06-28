@@ -29,6 +29,7 @@
 		AD6694712B61377D0008339A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6694702B61377D0008339A /* ButtonView.swift */; };
 		AD6694732B6146D70008339A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6694722B6146D70008339A /* Extensions.swift */; };
 		AD7268512BB04ABA002DC1AF /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7268502BB04ABA002DC1AF /* AudioManager.swift */; };
+		AD733DB72C2EBDB9009D1608 /* MotviationPlaylistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD733DB62C2EBDB9009D1608 /* MotviationPlaylistViewModel.swift */; };
 		AD8261BE2B52ABFD0013356E /* StudentMentalHealthAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */; };
 		AD8261C02B52ABFD0013356E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261BF2B52ABFD0013356E /* MainView.swift */; };
 		AD8261C22B52ABFE0013356E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8261C12B52ABFE0013356E /* Assets.xcassets */; };
@@ -120,6 +121,7 @@
 		AD6694722B6146D70008339A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AD7268502BB04ABA002DC1AF /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		AD7268542BB04F95002DC1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD733DB62C2EBDB9009D1608 /* MotviationPlaylistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotviationPlaylistViewModel.swift; sourceTree = "<group>"; };
 		AD8261BA2B52ABFD0013356E /* StudentMentalHealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentMentalHealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMentalHealthAppApp.swift; sourceTree = "<group>"; };
 		AD8261BF2B52ABFD0013356E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 			children = (
 				AD3325C82C2D907B00CA235B /* VideoModel.swift */,
 				AD3325D02C2D926200CA235B /* VideoGalleryViewModel.swift */,
+				AD733DB62C2EBDB9009D1608 /* MotviationPlaylistViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -821,6 +824,7 @@
 				AD8261FB2B52B6710013356E /* ToDoListView.swift in Sources */,
 				AD5C1B9E2C10C7DC006FBD89 /* GoalProgressView.swift in Sources */,
 				ADAF57BD2BAEE1D700BA62A6 /* PlayerView.swift in Sources */,
+				AD733DB72C2EBDB9009D1608 /* MotviationPlaylistViewModel.swift in Sources */,
 				ADBC6F222C2C56BA008B396C /* DayViewModel.swift in Sources */,
 				AD82621D2B52BC230013356E /* HeaderView.swift in Sources */,
 				ADE136012BF9FEF9000E88E7 /* PomodoroTimer.swift in Sources */,
