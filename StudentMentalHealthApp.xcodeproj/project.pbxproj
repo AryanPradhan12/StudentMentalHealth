@@ -26,6 +26,8 @@
 		AD5C1B9B2C10C7BB006FBD89 /* GoalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C1B9A2C10C7BB006FBD89 /* GoalItemView.swift */; };
 		AD5C1B9E2C10C7DC006FBD89 /* GoalProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C1B9D2C10C7DC006FBD89 /* GoalProgressView.swift */; };
 		AD5C1BA02C10C7EE006FBD89 /* AddGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C1B9F2C10C7EE006FBD89 /* AddGoalView.swift */; };
+		AD667E3B2C301F7F008135FC /* StudyPlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD667E3A2C301F7F008135FC /* StudyPlaylistView.swift */; };
+		AD667E3D2C302160008135FC /* StudyPlaylistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD667E3C2C302160008135FC /* StudyPlaylistViewModel.swift */; };
 		AD6694712B61377D0008339A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6694702B61377D0008339A /* ButtonView.swift */; };
 		AD6694732B6146D70008339A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6694722B6146D70008339A /* Extensions.swift */; };
 		AD7268512BB04ABA002DC1AF /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7268502BB04ABA002DC1AF /* AudioManager.swift */; };
@@ -117,6 +119,8 @@
 		AD5C1B9A2C10C7BB006FBD89 /* GoalItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalItemView.swift; sourceTree = "<group>"; };
 		AD5C1B9D2C10C7DC006FBD89 /* GoalProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalProgressView.swift; sourceTree = "<group>"; };
 		AD5C1B9F2C10C7EE006FBD89 /* AddGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalView.swift; sourceTree = "<group>"; };
+		AD667E3A2C301F7F008135FC /* StudyPlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyPlaylistView.swift; sourceTree = "<group>"; };
+		AD667E3C2C302160008135FC /* StudyPlaylistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyPlaylistViewModel.swift; sourceTree = "<group>"; };
 		AD6694702B61377D0008339A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		AD6694722B6146D70008339A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AD7268502BB04ABA002DC1AF /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
@@ -502,6 +506,7 @@
 		ADA143422BBC267100DB41B1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD667E3A2C301F7F008135FC /* StudyPlaylistView.swift */,
 				AD3325D62C2D991500CA235B /* StudyVideoGalleryView.swift */,
 				ADA143432BBC267A00DB41B1 /* StudyView.swift */,
 				ADA1434A2BBC356200DB41B1 /* PomodoroTimer */,
@@ -513,6 +518,7 @@
 			isa = PBXGroup;
 			children = (
 				AD3325D42C2D98E900CA235B /* StudyVideoGalleryViewModel.swift */,
+				AD667E3C2C302160008135FC /* StudyPlaylistViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -809,6 +815,7 @@
 				ADBC6F1E2C2C56A0008B396C /* WeeklyScheduleView.swift in Sources */,
 				ADFDE4B72B667C8D00460EDD /* HomePageViewViewModel.swift in Sources */,
 				ADDA97EB2BB0358E00487EAB /* MeditationViewModel.swift in Sources */,
+				AD667E3D2C302160008135FC /* StudyPlaylistViewModel.swift in Sources */,
 				ADAF57BF2BAEE4E500BA62A6 /* PlayBackControlButton.swift in Sources */,
 				AD3C94692BFF5ED200B3566D /* CardView.swift in Sources */,
 				ADA143402BBC247600DB41B1 /* MotivationView.swift in Sources */,
@@ -834,6 +841,7 @@
 				AD8262012B52B6C20013356E /* RegisterView.swift in Sources */,
 				AD82621B2B52B84A0013356E /* RegisterViewViewModel.swift in Sources */,
 				AD8FAAC52BF8AE9C004F3C0C /* PomodoroView.swift in Sources */,
+				AD667E3B2C301F7F008135FC /* StudyPlaylistView.swift in Sources */,
 				AD8261F82B52B63D0013356E /* ProfileView.swift in Sources */,
 				ADBC6F202C2C56AA008B396C /* DayView.swift in Sources */,
 				ADAF57BB2BAEC9F400BA62A6 /* MeditationView.swift in Sources */,

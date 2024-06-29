@@ -13,28 +13,30 @@ struct StudyView: View {
     
     var body: some View {
         NavigationView {
-                ZStack {
-                    Image("StudyhubBG")
-                        .resizable()
-                        .scaledToFill()
-                        .edgesIgnoringSafeArea(.all)
-                        .opacity(0.7)
-                    
-                    VStack {
-                        if isVisible {
-                            Text("Welcome to the Study HUB!")
-                                .bold()
-                                .font(.system(size: 25))
-                                .transition(.opacity)
-                                .animation(.easeInOut(duration: 1.0), value: isVisible)
-                            Spacer()
-                        }
+            ZStack {
+                Image("StudyhubBG")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                    .opacity(0.7)
+                
+                VStack {
+                    if isVisible {
+                        Text("Welcome to the Study HUB!")
+                            .bold()
+                            .font(.system(size: 25))
+                            .transition(.opacity)
+                            .animation(.easeInOut(duration: 1.0), value: isVisible)
+                        Spacer()
                     }
-                    .onAppear {
-                        withAnimation {
-                            self.isVisible = true
-                        }
+                }
+                .onAppear {
+                    withAnimation {
+                        self.isVisible = true
                     }
+                }
+                
+                HStack {
                     VStack {
                         RoundedRectangle(cornerRadius: 15)
                             .frame(width: 100, height: 100)
@@ -45,7 +47,7 @@ struct StudyView: View {
                                     label: {
                                         VStack {
                                             Image(systemName: "timer")
-                                                .foregroundColor(.white)
+                                                .foregroundColor(.black)
                                                 .font(.system(size: 40))
                                             Text("Pomodoro Timer")
                                                 .foregroundColor(.white)
@@ -53,15 +55,39 @@ struct StudyView: View {
                                                 .font(.system(size: 15))
                                         }
                                     }))
+                        RoundedRectangle(cornerRadius: 15)
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(.blue)
+                            .overlay(
+                                NavigationLink(
+                                    destination: StudyPlaylistView(),
+                                    label: {
+                                        VStack {
+                                            Image(systemName: "music.note.list")
+                                                .foregroundColor(.black)
+                                                .font(.system(size: 40))
+                                            Text("Study Playlist")
+                                                .foregroundColor(.white)
+                                                .fontWeight(.semibold)
+                                                .font(.system(size: 15))
+                                        }
+                                    }))
+                        Spacer()
                     }
-                    .offset(x: -90, y: -250)
+                    .padding(.leading)
+                    
+                    Spacer()
                     
                     VStack {
                         StudyVideoGalleryView(viewModel: videoGalleryViewModel)
                             .frame(width: 250, height: 200)
+                        Spacer()
                     }
+                    .padding(.trailing)
                 }
+                .padding(.top, 50)
             }
+        }
     }
 }
 

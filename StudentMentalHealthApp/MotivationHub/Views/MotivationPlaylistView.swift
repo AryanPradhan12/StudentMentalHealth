@@ -11,14 +11,15 @@ struct MotivationPlaylistView: View {
     @StateObject private var viewModel = MotivationPlaylistViewModel()
     var body: some View {
         ZStack {
-            Color.blue
+            Color.homepagesectiontextcolor
                 .ignoresSafeArea(.all)
             
             VStack {
                 
                 HStack {
-                    Text("A Playlist of Motivational Songs")
+                    Text("A List of Motivational Songs")
                         .font(.title)
+                        .bold()
                         .font(.system(size: 15))
                         .underline()
                 }
@@ -34,12 +35,14 @@ struct MotivationPlaylistView: View {
                                 .font(.subheadline)
                                 .font(.system(size: 12))
                         }
+                        .listRowBackground(Color.homepagesectiontextcolor)
                     }
+                    .background(Color.homepagesectionsbackground)
                 }
             }
         }
-        }
     }
+}
 
 #Preview {
     MotivationPlaylistView()
