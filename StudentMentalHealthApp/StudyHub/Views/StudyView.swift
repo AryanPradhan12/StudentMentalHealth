@@ -72,6 +72,23 @@ struct StudyView: View {
                                                 .font(.system(size: 15))
                                         }
                                     }))
+                        RoundedRectangle(cornerRadius: 15)
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(.blue)
+                            .overlay(
+                                NavigationLink(
+                                    destination: StudyMethodView(),
+                                    label: {
+                                        VStack {
+                                            Image(systemName: "book.circle")
+                                                .foregroundColor(.black)
+                                                .font(.system(size: 40))
+                                            Text("Study Methods")
+                                                .foregroundColor(.white)
+                                                .fontWeight(.semibold)
+                                                .font(.system(size: 15))
+                                        }
+                                    }))
                         Spacer()
                     }
                     .padding(.leading)

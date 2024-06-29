@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0B68D72C30335D009C77EF /* StudyMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B68D62C30335D009C77EF /* StudyMethodView.swift */; };
 		AD18BD112C29B07000E2CBBD /* RateYourDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD18BD102C29B07000E2CBBD /* RateYourDayView.swift */; };
 		AD27D06C2B8CC78200E1EEF7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AD27D06B2B8CC78200E1EEF7 /* FirebaseFirestore */; };
 		AD27D06E2B8CC78C00E1EEF7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AD27D06D2B8CC78C00E1EEF7 /* FirebaseAuth */; };
@@ -103,6 +104,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD0B68D62C30335D009C77EF /* StudyMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyMethodView.swift; sourceTree = "<group>"; };
 		AD18BD102C29B07000E2CBBD /* RateYourDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateYourDayView.swift; sourceTree = "<group>"; };
 		AD3325C82C2D907B00CA235B /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		AD3325CE2C2D919400CA235B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -506,6 +508,7 @@
 		ADA143422BBC267100DB41B1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD0B68D62C30335D009C77EF /* StudyMethodView.swift */,
 				AD667E3A2C301F7F008135FC /* StudyPlaylistView.swift */,
 				AD3325D62C2D991500CA235B /* StudyVideoGalleryView.swift */,
 				ADA143432BBC267A00DB41B1 /* StudyView.swift */,
@@ -809,6 +812,7 @@
 				AD3325D92C2D9C7900CA235B /* MotivationPlaylistView.swift in Sources */,
 				AD8262132B52B8150013356E /* ToDoListItemViewViewModel.swift in Sources */,
 				AD5C1B972C10C77C006FBD89 /* GoalViewModel.swift in Sources */,
+				AD0B68D72C30335D009C77EF /* StudyMethodView.swift in Sources */,
 				AD82620D2B52B7C30013356E /* ToDoListItem.swift in Sources */,
 				AD3325D52C2D98E900CA235B /* StudyVideoGalleryViewModel.swift in Sources */,
 				AD6694712B61377D0008339A /* ButtonView.swift in Sources */,
