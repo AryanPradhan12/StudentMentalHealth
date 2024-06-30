@@ -134,7 +134,7 @@ struct HomePageView: View {
                                 Image(systemName: "star.fill")
                                     .resizable()
                                     .foregroundColor(.black)
-                                    .frame(width: 40, height: 40)
+                                    .frame(width: 50, height: 40)
                                 Text("Rate your day!")
                                     .font(.system(size: 10))
                                     .foregroundColor(.homepagesectiontextcolor)

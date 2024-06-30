@@ -73,7 +73,7 @@ struct MotivationView: View {
                                                     .resizable()
                                                     .frame(width: 55, height: 35)
                                                     .foregroundColor(.black)
-                                                Text("WorkOutPlan")
+                                                Text("Work Out Plan")
                                                     .foregroundColor(.white)
                                                     .fontWeight(.semibold)
                                                     .font(.system(size: 15))
@@ -92,9 +92,29 @@ struct MotivationView: View {
                                             VStack {
                                                 Image(systemName: "music.note.list")
                                                     .resizable()
-                                                    .frame(width: 55, height: 35)
+                                                    .frame(width: 45, height: 35)
                                                     .foregroundColor(.black)
-                                                Text("MotivationalPlaylist")
+                                                Text("Motivational Playlist")
+                                                    .foregroundColor(.white)
+                                                    .fontWeight(.semibold)
+                                                    .font(.system(size: 12))
+                                            }
+                                        )
+                                }
+                            )
+                            NavigationLink(
+                                destination: MotivationalBooksView(),
+                                label: {
+                                    RoundedRectangle(cornerRadius: 15)
+                                        .frame(width: 100, height: 100)
+                                        .foregroundColor(.blue)
+                                        .overlay(
+                                            VStack {
+                                                Image(systemName: "book.closed")
+                                                    .resizable()
+                                                    .frame(width: 35, height: 35)
+                                                    .foregroundColor(.black)
+                                                Text("Motivational Books")
                                                     .foregroundColor(.white)
                                                     .fontWeight(.semibold)
                                                     .font(.system(size: 12))
