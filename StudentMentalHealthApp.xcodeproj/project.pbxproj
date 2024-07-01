@@ -25,6 +25,8 @@
 		AD3325D92C2D9C7900CA235B /* MotivationPlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3325D82C2D9C7900CA235B /* MotivationPlaylistView.swift */; };
 		AD3C94692BFF5ED200B3566D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C94682BFF5ED200B3566D /* CardView.swift */; };
 		AD3C946B2BFF647A00B3566D /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C946A2BFF647A00B3566D /* GameView.swift */; };
+		AD444F8B2C32E21F006894FC /* RewardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD444F8A2C32E21F006894FC /* RewardModel.swift */; };
+		AD444F8D2C32E230006894FC /* RewardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD444F8C2C32E230006894FC /* RewardsViewModel.swift */; };
 		AD5C1B942C10C75E006FBD89 /* GoalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C1B932C10C75E006FBD89 /* GoalModel.swift */; };
 		AD5C1B972C10C77C006FBD89 /* GoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C1B962C10C77C006FBD89 /* GoalViewModel.swift */; };
 		AD5C1B992C10C7A0006FBD89 /* GoalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C1B982C10C7A0006FBD89 /* GoalListView.swift */; };
@@ -125,6 +127,8 @@
 		AD3325D82C2D9C7900CA235B /* MotivationPlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationPlaylistView.swift; sourceTree = "<group>"; };
 		AD3C94682BFF5ED200B3566D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AD3C946A2BFF647A00B3566D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		AD444F8A2C32E21F006894FC /* RewardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardModel.swift; sourceTree = "<group>"; };
+		AD444F8C2C32E230006894FC /* RewardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewModel.swift; sourceTree = "<group>"; };
 		AD5C1B932C10C75E006FBD89 /* GoalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalModel.swift; sourceTree = "<group>"; };
 		AD5C1B962C10C77C006FBD89 /* GoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewModel.swift; sourceTree = "<group>"; };
 		AD5C1B982C10C7A0006FBD89 /* GoalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListView.swift; sourceTree = "<group>"; };
@@ -295,6 +299,40 @@
 			isa = PBXGroup;
 			children = (
 				ADF9348D2BFA9A5E00ACBCE0 /* Memory.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AD444F862C32E1F2006894FC /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				AD444F892C32E20C006894FC /* ViewModels */,
+				AD444F882C32E207006894FC /* Models */,
+				AD444F872C32E1FF006894FC /* Views */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
+		AD444F872C32E1FF006894FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADBF58202C32C0280029D146 /* RewardsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD444F882C32E207006894FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD444F8A2C32E21F006894FC /* RewardModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD444F892C32E20C006894FC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AD444F8C2C32E230006894FC /* RewardsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -547,6 +585,7 @@
 		ADA143412BBC266700DB41B1 /* StudyHub */ = {
 			isa = PBXGroup;
 			children = (
+				AD444F862C32E1F2006894FC /* Rewards */,
 				ADA143472BBC32E500DB41B1 /* ViewModels */,
 				ADA143422BBC267100DB41B1 /* Views */,
 			);
@@ -556,7 +595,6 @@
 		ADA143422BBC267100DB41B1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				ADBF58202C32C0280029D146 /* RewardsView.swift */,
 				ADCC80FF2C329A0000AB1015 /* StudyBooksView.swift */,
 				AD0B68D62C30335D009C77EF /* StudyMethodView.swift */,
 				AD667E3A2C301F7F008135FC /* StudyPlaylistView.swift */,
@@ -864,6 +902,7 @@
 				AD8262132B52B8150013356E /* ToDoListItemViewViewModel.swift in Sources */,
 				AD5C1B972C10C77C006FBD89 /* GoalViewModel.swift in Sources */,
 				ADBF58212C32C0280029D146 /* RewardsView.swift in Sources */,
+				AD444F8B2C32E21F006894FC /* RewardModel.swift in Sources */,
 				AD2EA1EE2C32AD460009E392 /* JournalView.swift in Sources */,
 				AD0B68D72C30335D009C77EF /* StudyMethodView.swift in Sources */,
 				AD82620D2B52B7C30013356E /* ToDoListItem.swift in Sources */,
@@ -901,6 +940,7 @@
 				AD8262012B52B6C20013356E /* RegisterView.swift in Sources */,
 				AD82621B2B52B84A0013356E /* RegisterViewViewModel.swift in Sources */,
 				AD8FAAC52BF8AE9C004F3C0C /* PomodoroView.swift in Sources */,
+				AD444F8D2C32E230006894FC /* RewardsViewModel.swift in Sources */,
 				AD667E3B2C301F7F008135FC /* StudyPlaylistView.swift in Sources */,
 				AD8261F82B52B63D0013356E /* ProfileView.swift in Sources */,
 				ADBC6F202C2C56AA008B396C /* DayView.swift in Sources */,
