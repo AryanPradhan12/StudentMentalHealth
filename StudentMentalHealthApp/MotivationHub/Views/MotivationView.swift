@@ -27,7 +27,6 @@ struct MotivationView: View {
                             .font(.system(size: 25))
                             .transition(.opacity)
                             .animation(.easeInOut(duration: 1.0), value: isVisible)
-                            .padding(.top, 50)
                         Spacer()
                     }
                 }
@@ -115,6 +114,26 @@ struct MotivationView: View {
                                                     .frame(width: 35, height: 35)
                                                     .foregroundColor(.black)
                                                 Text("Motivational Books")
+                                                    .foregroundColor(.white)
+                                                    .fontWeight(.semibold)
+                                                    .font(.system(size: 12))
+                                            }
+                                        )
+                                }
+                            )
+                            NavigationLink(
+                                destination: JournalView(),
+                                label: {
+                                    RoundedRectangle(cornerRadius: 15)
+                                        .frame(width: 100, height: 100)
+                                        .foregroundColor(.blue)
+                                        .overlay(
+                                            VStack {
+                                                Image(systemName: "note.text")
+                                                    .resizable()
+                                                    .frame(width: 35, height: 35)
+                                                    .foregroundColor(.black)
+                                                Text("Journaling")
                                                     .foregroundColor(.white)
                                                     .fontWeight(.semibold)
                                                     .font(.system(size: 12))

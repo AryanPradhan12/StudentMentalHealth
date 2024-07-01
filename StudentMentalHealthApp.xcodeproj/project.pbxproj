@@ -13,6 +13,9 @@
 		AD27D06C2B8CC78200E1EEF7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AD27D06B2B8CC78200E1EEF7 /* FirebaseFirestore */; };
 		AD27D06E2B8CC78C00E1EEF7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AD27D06D2B8CC78C00E1EEF7 /* FirebaseAuth */; };
 		AD27D0702B8CC79800E1EEF7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD27D06F2B8CC79800E1EEF7 /* FirebaseFirestoreSwift */; };
+		AD2EA1EA2C32AD1F0009E392 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2EA1E92C32AD1F0009E392 /* JournalEntry.swift */; };
+		AD2EA1EC2C32AD350009E392 /* JournalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2EA1EB2C32AD350009E392 /* JournalViewModel.swift */; };
+		AD2EA1EE2C32AD460009E392 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2EA1ED2C32AD460009E392 /* JournalView.swift */; };
 		AD3325C92C2D907B00CA235B /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3325C82C2D907B00CA235B /* VideoModel.swift */; };
 		AD3325CF2C2D919400CA235B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3325CE2C2D919400CA235B /* WebView.swift */; };
 		AD3325D12C2D926200CA235B /* VideoGalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3325D02C2D926200CA235B /* VideoGalleryViewModel.swift */; };
@@ -109,6 +112,9 @@
 		AD0B68D62C30335D009C77EF /* StudyMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyMethodView.swift; sourceTree = "<group>"; };
 		AD0B68D82C3043CF009C77EF /* MotivationalBooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationalBooksView.swift; sourceTree = "<group>"; };
 		AD18BD102C29B07000E2CBBD /* RateYourDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateYourDayView.swift; sourceTree = "<group>"; };
+		AD2EA1E92C32AD1F0009E392 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		AD2EA1EB2C32AD350009E392 /* JournalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewModel.swift; sourceTree = "<group>"; };
+		AD2EA1ED2C32AD460009E392 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		AD3325C82C2D907B00CA235B /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		AD3325CE2C2D919400CA235B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		AD3325D02C2D926200CA235B /* VideoGalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGalleryViewModel.swift; sourceTree = "<group>"; };
@@ -237,6 +243,40 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD2EA1E52C32ACEE0009E392 /* Journaling */ = {
+			isa = PBXGroup;
+			children = (
+				AD2EA1E82C32AD100009E392 /* ViewModels */,
+				AD2EA1E72C32AD050009E392 /* Views */,
+				AD2EA1E62C32AD010009E392 /* Models */,
+			);
+			path = Journaling;
+			sourceTree = "<group>";
+		};
+		AD2EA1E62C32AD010009E392 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD2EA1E92C32AD1F0009E392 /* JournalEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD2EA1E72C32AD050009E392 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD2EA1ED2C32AD460009E392 /* JournalView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD2EA1E82C32AD100009E392 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AD2EA1EB2C32AD350009E392 /* JournalViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		AD3325C72C2D906700CA235B /* ViewModels */ = {
@@ -481,6 +521,7 @@
 		ADA1433D2BBC244D00DB41B1 /* MotivationHub */ = {
 			isa = PBXGroup;
 			children = (
+				AD2EA1E52C32ACEE0009E392 /* Journaling */,
 				AD3325C72C2D906700CA235B /* ViewModels */,
 				ADBC6F1A2C2C566C008B396C /* WorkOutPlan */,
 				AD5C1B902C10C730006FBD89 /* GoalSetting2 */,
@@ -819,8 +860,10 @@
 				ADCC81002C329A0000AB1015 /* StudyBooksView.swift in Sources */,
 				AD8262132B52B8150013356E /* ToDoListItemViewViewModel.swift in Sources */,
 				AD5C1B972C10C77C006FBD89 /* GoalViewModel.swift in Sources */,
+				AD2EA1EE2C32AD460009E392 /* JournalView.swift in Sources */,
 				AD0B68D72C30335D009C77EF /* StudyMethodView.swift in Sources */,
 				AD82620D2B52B7C30013356E /* ToDoListItem.swift in Sources */,
+				AD2EA1EC2C32AD350009E392 /* JournalViewModel.swift in Sources */,
 				AD3325D52C2D98E900CA235B /* StudyVideoGalleryViewModel.swift in Sources */,
 				AD6694712B61377D0008339A /* ButtonView.swift in Sources */,
 				ADBC6F1E2C2C56A0008B396C /* WeeklyScheduleView.swift in Sources */,
@@ -833,6 +876,7 @@
 				AD8A590E2B9E09A10092BC97 /* NotificationView.swift in Sources */,
 				AD0B68D92C3043CF009C77EF /* MotivationalBooksView.swift in Sources */,
 				AD8261FF2B52B6AB0013356E /* LoginView.swift in Sources */,
+				AD2EA1EA2C32AD1F0009E392 /* JournalEntry.swift in Sources */,
 				AD8261C02B52ABFD0013356E /* MainView.swift in Sources */,
 				ADA143442BBC267A00DB41B1 /* StudyView.swift in Sources */,
 				ADE135FF2BF9F801000E88E7 /* PomodoroNotification.swift in Sources */,
