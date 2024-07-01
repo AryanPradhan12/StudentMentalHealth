@@ -1,20 +1,20 @@
 //
-//  MotivationalBooksView.swift
+//  StudyBooksView.swift
 //  StudentMentalHealthApp
 //
-//  Created by Aryan Pradhan on 29/06/2024.
+//  Created by Aryan Pradhan on 01/07/2024.
 //
 
 import SwiftUI
 
-struct MotivationalBooksView: View {
+struct StudyBooksView: View {
     var body: some View {
         ZStack {
-            LinearGradient(colors: [.purple, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(colors: [.orange, .yellow], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()
             VStack {
                 HStack {
-                    Text("A List of Motivational Books")
+                    Text("A List of Study Books")
                         .bold()
                         .underline()
                         .font(.title)
@@ -24,80 +24,80 @@ struct MotivationalBooksView: View {
                     VStack {
                         HStack {
                             Spacer()
-                            Image("PowerOfNow")
+                            Image("DeepWorkBook")
                                 .resizable()
                                 .frame(width: 80, height: 130)
                             Spacer()
                             VStack {
-                                Text("The Power Of Now")
-                                    .bold()
-                                    .underline()
-                                    .font(.system(size: 13))
-                                Text("By: Eckhart Tolle")
-                                    .font(.system(size: 11))
-                            }
-                            Spacer()
-                        }
-                        HStack {
-                            Spacer()
-                            Image("AwakenTheGiantWithin")
-                                .resizable()
-                                .frame(width: 80, height: 130)
-                            Spacer()
-                            VStack {
-                                Text("Awaken The Giant Within")
-                                    .bold()
-                                    .underline()
-                                    .font(.system(size: 13))
-                                Text("By: Tony Robbins")
-                                    .font(.system(size: 11))
-                            }
-                            Spacer()
-                        }
-                        HStack {
-                            Spacer()
-                            Image("DriveBook")
-                                .resizable()
-                                .frame(width: 80, height: 130)
-                            Spacer()
-                            VStack {
-                                Text("Drive: The Surprising Truth About What Motivates Us")
+                                Text("Deep Work: Rules for Focused Success in a Distracted World")
                                     .bold()
                                     .underline()
                                     .font(.system(size: 11))
-                                Text("By: Daniel H. Pink")
+                                Text("By: Cal Newport")
                                     .font(.system(size: 9))
                             }
                             Spacer()
                         }
                         HStack {
                             Spacer()
-                            Image("GritBook")
+                            Image("MakeItStickBook")
                                 .resizable()
                                 .frame(width: 80, height: 130)
                             Spacer()
                             VStack {
-                                Text("Grit: The Power of Passion and Perseverance")
+                                Text("Make It Stick: The Science of Successful Learning")
                                     .bold()
                                     .underline()
                                     .font(.system(size: 11))
-                                Text("By: Angela Duckworth")
+                                Text("By: Peter C. Brown")
                                     .font(.system(size: 9))
                             }
                             Spacer()
                         }
                         HStack {
                             Spacer()
-                            Image("7HabitsBook")
+                            Image("AtomicHabitsBook")
                                 .resizable()
                                 .frame(width: 80, height: 130)
                             Spacer()
                             VStack {
-                                Text("The 7 Habits of Highly Effective People")
+                                Text("Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones")
                                     .bold()
                                     .underline()
                                     .font(.system(size: 11))
-                                Text("By: Stephen R. Covey")
+                                Text("By: James Clear")
+                                    .font(.system(size: 9))
+                            }
+                            Spacer()
+                        }
+                        HStack {
+                            Spacer()
+                            Image("HowToBecomeBook")
+                                .resizable()
+                                .frame(width: 80, height: 130)
+                            Spacer()
+                            VStack {
+                                Text("How to Become a Straight-A Student: The Unconventional Strategies Real College Students Use to Score High While Studying Less")
+                                    .bold()
+                                    .underline()
+                                    .font(.system(size: 11))
+                                Text("By: Cal Newport")
+                                    .font(.system(size: 9))
+                            }
+                            Spacer()
+                        }
+                        HStack {
+                            Spacer()
+                            Image("TheOrganizedMindBook")
+                                .resizable()
+                                .frame(width: 80, height: 130)
+                            Spacer()
+                            VStack {
+                                Text("The Organized Mind: Thinking Straight in the Age of Information Overload")
+                                    .bold()
+                                    .underline()
+                                    .font(.system(size: 11))
+                                Text("By: Daniel J. Levitin")
                                     .font(.system(size: 9))
                             }
                             Spacer()
@@ -108,8 +108,8 @@ struct MotivationalBooksView: View {
             }
         }
     }
-}
+    }
 
 #Preview {
-    MotivationalBooksView()
+    StudyBooksView()
 }
