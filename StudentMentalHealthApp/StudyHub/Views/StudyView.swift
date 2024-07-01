@@ -106,6 +106,23 @@ struct StudyView: View {
                                                 .font(.system(size: 15))
                                         }
                                     }))
+                        RoundedRectangle(cornerRadius: 15)
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(.blue)
+                            .overlay(
+                                NavigationLink(
+                                    destination: RewardsView(),
+                                    label: {
+                                        VStack {
+                                            Image(systemName: "gift")
+                                                .foregroundColor(.black)
+                                                .font(.system(size: 40))
+                                            Text("Study Rewards")
+                                                .foregroundColor(.white)
+                                                .fontWeight(.semibold)
+                                                .font(.system(size: 15))
+                                        }
+                                    }))
                         Spacer()
                     }
                     .padding(.leading)

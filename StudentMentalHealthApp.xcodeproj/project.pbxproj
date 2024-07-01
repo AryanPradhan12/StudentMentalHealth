@@ -74,6 +74,7 @@
 		ADBC6F1E2C2C56A0008B396C /* WeeklyScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC6F1D2C2C56A0008B396C /* WeeklyScheduleView.swift */; };
 		ADBC6F202C2C56AA008B396C /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC6F1F2C2C56AA008B396C /* DayView.swift */; };
 		ADBC6F222C2C56BA008B396C /* DayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC6F212C2C56BA008B396C /* DayViewModel.swift */; };
+		ADBF58212C32C0280029D146 /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBF58202C32C0280029D146 /* RewardsView.swift */; };
 		ADCC81002C329A0000AB1015 /* StudyBooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC80FF2C329A0000AB1015 /* StudyBooksView.swift */; };
 		ADCE5BDD2B9F43B900B9F61A /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE5BDC2B9F43B900B9F61A /* NotificationViewModel.swift */; };
 		ADDA97EB2BB0358E00487EAB /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDA97EA2BB0358E00487EAB /* MeditationViewModel.swift */; };
@@ -177,6 +178,7 @@
 		ADBC6F1D2C2C56A0008B396C /* WeeklyScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyScheduleView.swift; sourceTree = "<group>"; };
 		ADBC6F1F2C2C56AA008B396C /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 		ADBC6F212C2C56BA008B396C /* DayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewModel.swift; sourceTree = "<group>"; };
+		ADBF58202C32C0280029D146 /* RewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsView.swift; sourceTree = "<group>"; };
 		ADCC80FF2C329A0000AB1015 /* StudyBooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyBooksView.swift; sourceTree = "<group>"; };
 		ADCE5BDC2B9F43B900B9F61A /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		ADDA97EA2BB0358E00487EAB /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
@@ -554,6 +556,7 @@
 		ADA143422BBC267100DB41B1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ADBF58202C32C0280029D146 /* RewardsView.swift */,
 				ADCC80FF2C329A0000AB1015 /* StudyBooksView.swift */,
 				AD0B68D62C30335D009C77EF /* StudyMethodView.swift */,
 				AD667E3A2C301F7F008135FC /* StudyPlaylistView.swift */,
@@ -860,6 +863,7 @@
 				ADCC81002C329A0000AB1015 /* StudyBooksView.swift in Sources */,
 				AD8262132B52B8150013356E /* ToDoListItemViewViewModel.swift in Sources */,
 				AD5C1B972C10C77C006FBD89 /* GoalViewModel.swift in Sources */,
+				ADBF58212C32C0280029D146 /* RewardsView.swift in Sources */,
 				AD2EA1EE2C32AD460009E392 /* JournalView.swift in Sources */,
 				AD0B68D72C30335D009C77EF /* StudyMethodView.swift in Sources */,
 				AD82620D2B52B7C30013356E /* ToDoListItem.swift in Sources */,

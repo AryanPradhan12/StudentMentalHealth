@@ -162,4 +162,3 @@ struct HomePageView: View {
                 .environmentObject(AudioManager())
         }
     }
-
