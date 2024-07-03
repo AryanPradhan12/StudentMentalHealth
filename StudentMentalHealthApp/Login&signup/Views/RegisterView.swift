@@ -32,28 +32,33 @@ struct RegisterView: View {
             .offset(y: -100)
             .padding(.bottom, 50)
             //End of header
-            
-            Form {
-                TextField("Full Name", text: $viewModel.name)
-                    .textFieldStyle(DefaultTextFieldStyle())
-                    .autocorrectionDisabled()
-                
-                TextField("Email Address", text: $viewModel.email)
-                    .textFieldStyle(DefaultTextFieldStyle())
-                    .autocapitalization(.none)
-                    .autocorrectionDisabled()
-                
-                SecureField("Password", text: $viewModel.password)
-                    .textFieldStyle(DefaultTextFieldStyle())
-                
-                ButtonView(title: "Create Account", background: .green) {
-                    viewModel.register()
-                    errorMessageID = UUID()
+                Form {
+                    TextField("Full Name", text: $viewModel.name)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                        .autocorrectionDisabled()
+                    
+                    TextField("Email Address", text: $viewModel.email)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                        .autocapitalization(.none)
+                        .autocorrectionDisabled()
+                    
+                    SecureField("Password", text: $viewModel.password)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                    
+                    ButtonView(title: "Create Account", background: .green) {
+                        viewModel.register()
+                        errorMessageID = UUID()
+                    }
+                    .padding()
                 }
-                .padding()
-            }
-            .offset(y: -50)
-            Spacer()
+                .offset(y: -50)
+                Spacer()
+                
+                VStack {
+                    Text("Already have an account?")
+                    NavigationLink("Log into your account", destination: LoginView())
+                }
+                Spacer()
             
             if !viewModel.errorMessage.isEmpty {
                             Text(viewModel.errorMessage)

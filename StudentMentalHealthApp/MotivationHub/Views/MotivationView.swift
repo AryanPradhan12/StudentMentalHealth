@@ -36,7 +36,6 @@ struct MotivationView: View {
                     }
                 }
                 
-                VStack {
                     HStack {
                         VStack(alignment: .leading, spacing: 20) {
                             NavigationLink(
@@ -137,27 +136,25 @@ struct MotivationView: View {
                                                     .foregroundColor(.white)
                                                     .fontWeight(.semibold)
                                                     .font(.system(size: 12))
-                                            }
-                                        )
-                                }
-                            )
+                                            })
+                                })
+                            Spacer()
                         }
-                        .padding(.top, 100)
                         .padding(.leading, 20)
                         
                         Spacer()
-                        
-                        VideoGalleryView(viewModel: videoGalleryViewModel)
-                            .frame(width: 250, height: 200)
-                            .padding(.trailing, 20)
-                            .padding(.top, 50)
+                        VStack {
+                            VideoGalleryView(viewModel: videoGalleryViewModel)
+                                .frame(width: 250, height: 200)
+                            Spacer()
+                        }
+                        .padding(.trailing)
                     }
-                    Spacer()
+                    .padding(.top, 50)
                 }
             }
         }
     }
-}
 
 #Preview {
     MotivationView()
