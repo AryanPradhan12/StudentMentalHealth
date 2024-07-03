@@ -132,6 +132,14 @@ struct StudyView: View {
                     VStack {
                         StudyVideoGalleryView(viewModel: videoGalleryViewModel)
                             .frame(width: 250, height: 200)
+                        
+                        Image("StudyImage1")
+                            .resizable()
+                            .frame(width: 250, height: 200)
+                        Image("StudyImage2")
+                            .resizable()
+                            .frame(width: 250, height: 200)
+                        
                         Spacer()
                     }
                     .padding(.trailing)
