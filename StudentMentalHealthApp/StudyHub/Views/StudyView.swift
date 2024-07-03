@@ -40,7 +40,7 @@ struct StudyView: View {
                     VStack {
                         RoundedRectangle(cornerRadius: 15)
                             .frame(width: 100, height: 100)
-                            .foregroundColor(.blue)
+                            .foregroundColor(.homepagetextcolor)
                             .overlay(
                                 NavigationLink(
                                     destination: PomodoroView(),
@@ -50,14 +50,14 @@ struct StudyView: View {
                                                 .foregroundColor(.black)
                                                 .font(.system(size: 40))
                                             Text("Pomodoro Timer")
-                                                .foregroundColor(.white)
+                                                .foregroundColor(.homepagesectiontextcolor)
                                                 .fontWeight(.semibold)
                                                 .font(.system(size: 15))
                                         }
                                     }))
                         RoundedRectangle(cornerRadius: 15)
                             .frame(width: 100, height: 100)
-                            .foregroundColor(.blue)
+                            .foregroundColor(.homepagetextcolor)
                             .overlay(
                                 NavigationLink(
                                     destination: StudyPlaylistView(),
@@ -67,14 +67,14 @@ struct StudyView: View {
                                                 .foregroundColor(.black)
                                                 .font(.system(size: 40))
                                             Text("Study Playlist")
-                                                .foregroundColor(.white)
+                                                .foregroundColor(.homepagesectiontextcolor)
                                                 .fontWeight(.semibold)
                                                 .font(.system(size: 15))
                                         }
                                     }))
                         RoundedRectangle(cornerRadius: 15)
                             .frame(width: 100, height: 100)
-                            .foregroundColor(.blue)
+                            .foregroundColor(.homepagetextcolor)
                             .overlay(
                                 NavigationLink(
                                     destination: StudyMethodView(),
@@ -84,14 +84,14 @@ struct StudyView: View {
                                                 .foregroundColor(.black)
                                                 .font(.system(size: 40))
                                             Text("Study Methods")
-                                                .foregroundColor(.white)
+                                                .foregroundColor(.homepagesectiontextcolor)
                                                 .fontWeight(.semibold)
                                                 .font(.system(size: 15))
                                         }
                                     }))
                         RoundedRectangle(cornerRadius: 15)
                             .frame(width: 100, height: 100)
-                            .foregroundColor(.blue)
+                            .foregroundColor(.homepagetextcolor)
                             .overlay(
                                 NavigationLink(
                                     destination: StudyBooksView(),
@@ -101,14 +101,14 @@ struct StudyView: View {
                                                 .foregroundColor(.black)
                                                 .font(.system(size: 40))
                                             Text("Study Books")
-                                                .foregroundColor(.white)
+                                                .foregroundColor(.homepagesectiontextcolor)
                                                 .fontWeight(.semibold)
                                                 .font(.system(size: 15))
                                         }
                                     }))
                         RoundedRectangle(cornerRadius: 15)
                             .frame(width: 100, height: 100)
-                            .foregroundColor(.blue)
+                            .foregroundColor(.homepagetextcolor)
                             .overlay(
                                 NavigationLink(
                                     destination: RewardsView(),
@@ -118,7 +118,7 @@ struct StudyView: View {
                                                 .foregroundColor(.black)
                                                 .font(.system(size: 40))
                                             Text("Study Rewards")
-                                                .foregroundColor(.white)
+                                                .foregroundColor(.homepagesectiontextcolor)
                                                 .fontWeight(.semibold)
                                                 .font(.system(size: 15))
                                         }
@@ -132,13 +132,26 @@ struct StudyView: View {
                     VStack {
                         StudyVideoGalleryView(viewModel: videoGalleryViewModel)
                             .frame(width: 250, height: 200)
+                            .overlay(
+                                        Rectangle()
+                                            .stroke(Color.black, lineWidth: 2)
+                                    )
                         
                         Image("StudyImage1")
                             .resizable()
                             .frame(width: 250, height: 200)
+                            .overlay(
+                                        Rectangle()
+                                            .stroke(Color.black, lineWidth: 2)
+                                    )
+                        
                         Image("StudyImage2")
                             .resizable()
                             .frame(width: 250, height: 200)
+                            .overlay(
+                                        Rectangle()
+                                            .stroke(Color.black, lineWidth: 2)
+                                    )
                         
                         Spacer()
                     }

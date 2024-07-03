@@ -43,7 +43,7 @@ struct MotivationView: View {
                                 label: {
                                     RoundedRectangle(cornerRadius: 15)
                                         .frame(width: 100, height: 100)
-                                        .foregroundColor(.blue)
+                                        .foregroundColor(.homepagetextcolor)
                                         .overlay(
                                             VStack {
                                                 Image("GoalSettingIcon")
@@ -51,7 +51,7 @@ struct MotivationView: View {
                                                     .frame(width: 55, height: 50)
                                                     .foregroundColor(.white)
                                                 Text("Goal Setting")
-                                                    .foregroundColor(.white)
+                                                    .foregroundColor(.homepagesectiontextcolor)
                                                     .fontWeight(.semibold)
                                                     .font(.system(size: 15))
                                             }
@@ -64,7 +64,7 @@ struct MotivationView: View {
                                 label: {
                                     RoundedRectangle(cornerRadius: 15)
                                         .frame(width: 100, height: 100)
-                                        .foregroundColor(.blue)
+                                        .foregroundColor(.homepagetextcolor)
                                         .overlay(
                                             VStack {
                                                 Image(systemName: "dumbbell")
@@ -72,7 +72,7 @@ struct MotivationView: View {
                                                     .frame(width: 55, height: 35)
                                                     .foregroundColor(.black)
                                                 Text("Work Out Plan")
-                                                    .foregroundColor(.white)
+                                                    .foregroundColor(.homepagesectiontextcolor)
                                                     .fontWeight(.semibold)
                                                     .font(.system(size: 15))
                                             }
@@ -85,7 +85,7 @@ struct MotivationView: View {
                                 label: {
                                     RoundedRectangle(cornerRadius: 15)
                                         .frame(width: 100, height: 100)
-                                        .foregroundColor(.blue)
+                                        .foregroundColor(.homepagetextcolor)
                                         .overlay(
                                             VStack {
                                                 Image(systemName: "music.note.list")
@@ -93,7 +93,7 @@ struct MotivationView: View {
                                                     .frame(width: 45, height: 35)
                                                     .foregroundColor(.black)
                                                 Text("Motivational Playlist")
-                                                    .foregroundColor(.white)
+                                                    .foregroundColor(.homepagesectiontextcolor)
                                                     .fontWeight(.semibold)
                                                     .font(.system(size: 12))
                                             }
@@ -105,7 +105,7 @@ struct MotivationView: View {
                                 label: {
                                     RoundedRectangle(cornerRadius: 15)
                                         .frame(width: 100, height: 100)
-                                        .foregroundColor(.blue)
+                                        .foregroundColor(.homepagetextcolor)
                                         .overlay(
                                             VStack {
                                                 Image(systemName: "book.closed")
@@ -113,7 +113,7 @@ struct MotivationView: View {
                                                     .frame(width: 35, height: 35)
                                                     .foregroundColor(.black)
                                                 Text("Motivational Books")
-                                                    .foregroundColor(.white)
+                                                    .foregroundColor(.homepagesectiontextcolor)
                                                     .fontWeight(.semibold)
                                                     .font(.system(size: 12))
                                             }
@@ -125,7 +125,7 @@ struct MotivationView: View {
                                 label: {
                                     RoundedRectangle(cornerRadius: 15)
                                         .frame(width: 100, height: 100)
-                                        .foregroundColor(.blue)
+                                        .foregroundColor(.homepagetextcolor)
                                         .overlay(
                                             VStack {
                                                 Image(systemName: "note.text")
@@ -133,7 +133,7 @@ struct MotivationView: View {
                                                     .frame(width: 35, height: 35)
                                                     .foregroundColor(.black)
                                                 Text("Journaling")
-                                                    .foregroundColor(.white)
+                                                    .foregroundColor(.homepagesectiontextcolor)
                                                     .fontWeight(.semibold)
                                                     .font(.system(size: 12))
                                             })
@@ -146,6 +146,27 @@ struct MotivationView: View {
                         VStack {
                             VideoGalleryView(viewModel: videoGalleryViewModel)
                                 .frame(width: 250, height: 200)
+                                .overlay(
+                                            Rectangle()
+                                                .stroke(Color.black, lineWidth: 2)
+                                        )
+                            
+                            Image("Motivationimage1")
+                                .resizable()
+                                .frame(width: 250, height: 200)
+                                .overlay(
+                                            Rectangle()
+                                                .stroke(Color.black, lineWidth: 2)
+                                        )
+                            
+                            Image("Motivationimage2")
+                                .resizable()
+                                .frame(width: 250, height: 200)
+                                .overlay(
+                                            Rectangle()
+                                                .stroke(Color.black, lineWidth: 2)
+                                        )
+                            
                             Spacer()
                         }
                         .padding(.trailing)
