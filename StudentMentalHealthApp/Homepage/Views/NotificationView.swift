@@ -49,100 +49,101 @@ class NotificationsManager {
 struct NotificationView: View {
     var body: some View {
         ZStack {
-            LinearGradient(colors: [.homepagesectionsbackground, .homepagetextcolor], startPoint: .topLeading, endPoint: .bottomTrailing)
-                .ignoresSafeArea()
-            Text("Notifications Center")
-                .offset(y: -350)
-                .bold()
-                .font(.system(size: 35))
-                .foregroundColor(Color.Mycolor)
+            Image("NotificationspageBG")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+            
             VStack {
-                Rectangle()
-                    .fill(Color.homepagesectiontextcolor)
-                    .frame(width: 400, height: 150)
-                    .overlay(
-                        VStack {
-                            Text(Constants.Notificationstext)
-                                .foregroundColor(Color.Mycolor)
-                                .font(.system(size: 25))
-                                .fontWeight(.semibold)
-                            Text(Constants.Notificationstext2)
-                                .foregroundColor(Color.purple)
-                                .font(.system(size: 18))
-                        }
-                    )
-            }
-            .offset(y: -240)
-            Rectangle()
-                .fill(Color.homepagesectiontextcolor)
-                .frame(width: 400, height: 300)
-                .overlay(
-                    VStack {
-                        Text("First allow us to send you notifications...")
-                            .offset(y: -10)
-                            .foregroundColor(Color.homepagesectionsbackground)
+                VStack {
+                    Image(systemName: "bell.and.waves.left.and.right.fill")
+                        .resizable()
+                        .foregroundColor(.white)
+                        .frame(width: 370, height: 240)
+                    Text("Notifications Center")
+                        .font(.title)
+                        .bold()
+                        .foregroundColor(.white)
+                        .font(.system(size: 24))
+                    Text("Enable notifications to stay in the loop,")
+                        .bold()
+                        .foregroundColor(.white)
+                        .font(.system(size: 22))
+                    
+                    Text("cancel at any time!")
+                        .bold()
+                        .foregroundColor(.white)
+                        .font(.system(size: 22))
+                    
+                }
+                
+                VStack {
+                    HStack {
                         Button(action: {
                             NotificationsManager.instance.requestAuthorization()
                         }) {
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(Color.homepagetextcolor)
-                                .frame(width: 100, height: 40)
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(Color.green)
+                                .frame(width: 150, height: 80)
                                 .overlay(
-                                    Text("Enable Notifications")
-                                        .font(.system(size: 10))
+                                    Text("Enable")
+                                        .bold()
+                                        .font(.system(size: 20))
                                         .foregroundColor(.black)
                                 )
                         }
-                        .offset(y: -20)
-                        
-                        Text("Now click on this button to start the notifications...")
-                            .offset(y: -30)
-                            .foregroundColor(Color.homepagesectionsbackground)
-                        Button(action: {
-                            NotificationsManager.instance.scheduleNotifications()
-                        }) {
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(Color.homepagetextcolor)
-                                .frame(width: 100, height: 40)
-                                .overlay(
-                                    Text("Schedule Notifications")
-                                        .font(.system(size: 10))
-                                        .foregroundColor(.black)
-                                )
-                        }
-                        .offset(y: -40)
-                        
-                        Text("Click this button to cancel all notifications...")
-                            .offset(y: -50)
-                            .foregroundColor(Color.homepagesectionsbackground)
-                        
                         Button(action: {
                             NotificationsManager.instance.cancelNotification()
                         }) {
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(Color.homepagetextcolor)
-                                .frame(width: 100, height: 40)
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(Color.red)
+                                .frame(width: 150, height: 80)
                                 .overlay(
-                                    Text("Cancel Notifications")
-                                        .font(.system(size: 10))
+                                    Text("Disable")
+                                        .bold()
+                                        .font(.system(size: 20))
                                         .foregroundColor(.black)
                                 )
                         }
-                        .offset(y: -60)
                     }
-                    .onAppear {
-                        UNUserNotificationCenter.current().setBadgeCount(0) { error in
-                            if let error = error {
-                                print("Failed to reset badge count: \(error.localizedDescription)")
-                            } else {
-                                print("Badge count reset successfully")
-                            }
+                    HStack {
+                        Button(action: {
+                            NotificationsManager.instance.scheduleNotifications()
+                        }) {
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(Color.white)
+                                .frame(width: 300, height: 80)
+                                .overlay(
+                                    HStack {
+                                        Image(systemName: "calendar.badge.plus")
+                                            .font(.system(size: 24))
+                                            .foregroundColor(.red)
+                                        Text("Schedule Notifications")
+                                            .bold()
+                                            .font(.system(size: 24))
+                                            .foregroundColor(.black)
+                                    }
+                                )
                         }
                     }
-                )
+                            }
+
+                Spacer()
+                }
+            .onAppear {
+                UNUserNotificationCenter.current().setBadgeCount(0) { error in
+                    if let error = error {
+                        print("Failed to reset badge count: \(error.localizedDescription)")
+                    } else {
+                        print("Badge count reset successfully")
+                    }
+                }
+                
+            }
+                
+            }
         }
     }
-}
 
 struct NotificationView_Previews: PreviewProvider {
     static var previews: some View {
