@@ -37,6 +37,7 @@
 		AD667E3D2C302160008135FC /* StudyPlaylistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD667E3C2C302160008135FC /* StudyPlaylistViewModel.swift */; };
 		AD6694712B61377D0008339A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6694702B61377D0008339A /* ButtonView.swift */; };
 		AD6694732B6146D70008339A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6694722B6146D70008339A /* Extensions.swift */; };
+		AD71FC182C36E0E700403F10 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71FC172C36E0E700403F10 /* ResourcesView.swift */; };
 		AD7268512BB04ABA002DC1AF /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7268502BB04ABA002DC1AF /* AudioManager.swift */; };
 		AD733DB72C2EBDB9009D1608 /* MotviationPlaylistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD733DB62C2EBDB9009D1608 /* MotviationPlaylistViewModel.swift */; };
 		AD8261BE2B52ABFD0013356E /* StudentMentalHealthAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8261BD2B52ABFD0013356E /* StudentMentalHealthAppApp.swift */; };
@@ -141,6 +142,7 @@
 		AD667E3C2C302160008135FC /* StudyPlaylistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyPlaylistViewModel.swift; sourceTree = "<group>"; };
 		AD6694702B61377D0008339A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		AD6694722B6146D70008339A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AD71FC172C36E0E700403F10 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
 		AD7268502BB04ABA002DC1AF /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		AD7268542BB04F95002DC1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD733DB62C2EBDB9009D1608 /* MotviationPlaylistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotviationPlaylistViewModel.swift; sourceTree = "<group>"; };
@@ -551,6 +553,7 @@
 			children = (
 				AD8262072B52B7610013356E /* HomePageView.swift */,
 				AD8A590D2B9E09A10092BC97 /* NotificationView.swift */,
+				AD71FC172C36E0E700403F10 /* ResourcesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -922,6 +925,7 @@
 				ADDA97EB2BB0358E00487EAB /* MeditationViewModel.swift in Sources */,
 				AD667E3D2C302160008135FC /* StudyPlaylistViewModel.swift in Sources */,
 				ADAF57BF2BAEE4E500BA62A6 /* PlayBackControlButton.swift in Sources */,
+				AD71FC182C36E0E700403F10 /* ResourcesView.swift in Sources */,
 				AD3C94692BFF5ED200B3566D /* CardView.swift in Sources */,
 				ADA143402BBC247600DB41B1 /* MotivationView.swift in Sources */,
 				AD8A590E2B9E09A10092BC97 /* NotificationView.swift in Sources */,
