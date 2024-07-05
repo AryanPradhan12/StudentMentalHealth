@@ -6,13 +6,26 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct VideoPlayerView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    private var player: AVPlayer
+    
+    init(videoName: String, videoType: String) {
+        if let path = Bundle.main.path(forResource: videoName, ofType: videoType) {
+            self.player = AVPlayer(url: URL(fileURLWithPath: path))
+        } else {
+            self.player = AVPlayer()
+        }
     }
-}
-
-#Preview {
-    VideoPlayerView()
+    
+    var body: some View {
+        VideoPlayer(player: player)
+            .onAppear() {
+                player.play()
+            }
+            .onDisappear() {
+                player.pause()
+            }
+    }
 }

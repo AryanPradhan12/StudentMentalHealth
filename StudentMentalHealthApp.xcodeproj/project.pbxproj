@@ -37,6 +37,7 @@
 		AD667E3D2C302160008135FC /* StudyPlaylistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD667E3C2C302160008135FC /* StudyPlaylistViewModel.swift */; };
 		AD6694712B61377D0008339A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6694702B61377D0008339A /* ButtonView.swift */; };
 		AD6694732B6146D70008339A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6694722B6146D70008339A /* Extensions.swift */; };
+		AD7089E62C38123A0011BB6D /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7089E52C38123A0011BB6D /* VideoPlayerView.swift */; };
 		AD71FC182C36E0E700403F10 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD71FC172C36E0E700403F10 /* ResourcesView.swift */; };
 		AD7268512BB04ABA002DC1AF /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7268502BB04ABA002DC1AF /* AudioManager.swift */; };
 		AD733DB72C2EBDB9009D1608 /* MotviationPlaylistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD733DB62C2EBDB9009D1608 /* MotviationPlaylistViewModel.swift */; };
@@ -142,6 +143,8 @@
 		AD667E3C2C302160008135FC /* StudyPlaylistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyPlaylistViewModel.swift; sourceTree = "<group>"; };
 		AD6694702B61377D0008339A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		AD6694722B6146D70008339A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AD7089E42C3812270011BB6D /* AppScreenRecord.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppScreenRecord.mp4; sourceTree = "<group>"; };
+		AD7089E52C38123A0011BB6D /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		AD71FC172C36E0E700403F10 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
 		AD7268502BB04ABA002DC1AF /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		AD7268542BB04F95002DC1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -488,6 +491,7 @@
 		AD8261F32B52B43E0013356E /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				AD7089E42C3812270011BB6D /* AppScreenRecord.mp4 */,
 				AD94BDB62C356B2100B88464 /* LoadingScreenAnimation.json */,
 				AD8261C12B52ABFE0013356E /* Assets.xcassets */,
 				AD9364322BB0B7C400BB2494 /* meditation1.mp3 */,
@@ -728,6 +732,7 @@
 			isa = PBXGroup;
 			children = (
 				ADF162442BA1F6A800B8B96A /* GetHelpView.swift */,
+				AD7089E52C38123A0011BB6D /* VideoPlayerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -961,6 +966,7 @@
 				AD6694732B6146D70008339A /* Extensions.swift in Sources */,
 				ADE136082BFA26DD000E88E7 /* CircleTimer.swift in Sources */,
 				AD3325C92C2D907B00CA235B /* VideoModel.swift in Sources */,
+				AD7089E62C38123A0011BB6D /* VideoPlayerView.swift in Sources */,
 				AD8262032B52B7090013356E /* ToDoListItemView.swift in Sources */,
 				ADE3AC8E2BA0AF3600BD0205 /* APIViewModel.swift in Sources */,
 				ADCE5BDD2B9F43B900B9F61A /* NotificationViewModel.swift in Sources */,
