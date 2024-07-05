@@ -20,19 +20,20 @@ struct GetHelpView: View {
                         Text("Get Help")
                             .foregroundColor(.black)
                             .font(.title)
-                            .font(.system(size: 35))
+                            .font(.system(size: 40))
                             .bold()
                     }
                     
                     VStack {
+                        WebView(url: URL(string: "https://www.youtube.com/embed/pn-WReEAh1g?si=HgHuItqYKoEmsseE")!)
+                            .frame(width: 380, height: 200)
+                            .cornerRadius(15)
+                        
                         RoundedRectangle(cornerRadius: 15)
-                            .fill()
-                            .frame(width: 380, height: 180)
+                            .fill(Color.gray.opacity(0.5))
+                            .frame(width: 380, height: 120)
                             .overlay (
                                 VStack {
-                                    Text("Need help with understanding all the features on the app? Don't worry we've got you...")
-                                        .bold()
-                                        .foregroundColor(.white)
                                     
                                     Text("Here is an instructional video that is sure to answer all your questions about the app's functionality...")
                                         .bold()
@@ -41,10 +42,7 @@ struct GetHelpView: View {
                                     .padding()
                             )
                         
-                        // Add the video player view here
-                        VideoPlayerView(videoName: "AppScreenRecord", videoType: "mp4")
-                            .frame(width: 380, height: 200)
-                            .cornerRadius(15)
+                        
                     }
                     Spacer()
                     
@@ -52,10 +50,10 @@ struct GetHelpView: View {
                         Text("About Us")
                             .foregroundColor(.black)
                             .font(.title)
-                            .font(.system(size: 35))
+                            .font(.system(size: 40))
                             .bold()
                         RoundedRectangle(cornerRadius: 15)
-                            .fill()
+                            .fill(Color.gray.opacity(0.5))
                             .frame(width: 380, height: 300)
                             .overlay (
                                 VStack {
